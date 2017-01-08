@@ -4,10 +4,8 @@ title: Home
 menu_index: 1
 ---
 
-The TokTok Project goal is to [**reinvent the internet**](vision.html).
-
-But in the meantime, we are a **focused** effort to bring high quality privacy
-enhancing software to everybody.
+We are a **focused** effort to bring high quality privacy enhancing software
+to everybody.
 
 ![TokTok Android client](static/img/toktok/chat-small.png)
 
@@ -19,9 +17,9 @@ moving on to the next target.
 
 Our current focus is:
 
-- Create a [full specification](spec.html) of the Tox protocol.
-- Create a free [reference implementation](https://github.com/TokTok/hs-toxcore)
-  of that protocol.
+-   Create a [full specification](spec.html) of the Tox protocol.
+-   Create a free [reference
+    implementation](https://github.com/TokTok/hs-toxcore) of that protocol.
 
 # Contact us
 
@@ -41,7 +39,9 @@ all projects can be viewed on this page.
     <th>Issues</th>
     <th>PRs</th>
   </tr>
-  {% comment %}The capture line is here because of a bug in Jekyll or something. :( {% endcomment %}
+  {% comment %}
+  The capture line is here because of a bug in Jekyll or something. :(
+  {% endcomment %}
   {% for repo in site.data.repos %}
   {% capture repo_name %}{{ repo.name }}{% endcapture %}
   {% include repository.html name=repo_name %}

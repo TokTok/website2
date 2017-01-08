@@ -5,17 +5,17 @@ permalink: mission.html
 menu_index: 2
 ---
 
-*Mission statement: To promote universal freedom of expression and to preserve
-unrestricted information exchange*
+**Mission statement:** *To promote universal freedom of expression and to
+preserve unrestricted information exchange*
 
 **Freedom of expression:** We believe that freedom of expression is a
 fundamental human right. It is required for creativity to exist. Freedom of
-expression is impossible to achieve without privacy. We want to make privacy the
-default, so people can express themselves without having to worry that they
-might be overheard.
+expression is impossible to achieve without privacy. We want to make privacy
+the default, so people can express themselves without having to worry that
+they might be overheard.
 
-**Universal:** Our goal is to bring privacy-enhancing technologies to
-every person anywhere on Earth, people of every age group and background. The
+**Universal:** Our goal is to bring privacy-enhancing technologies to every
+person anywhere on Earth, people of every age group and background. The
 freedom we aim to uphold belongs to everybody, every individual and every
 group.
 
@@ -38,6 +38,6 @@ today. We aim to preserve that level as the world grows to be more
 interconnected over long distances and to protect it in the situations it
 exists in today.
 
-**Unrestricted:** Those two people are able to exchange any type of information
-in that room. The TokTok Project will show no bias towards the contents and
-nature of information exchanged through our technology.
+**Unrestricted:** Those two people are able to exchange any type of
+information in that room. The TokTok Project will show no bias towards the
+contents and nature of information exchanged through our technology.
