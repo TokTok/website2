@@ -6,9 +6,11 @@ permalink: design/tqnl.html
 ---
 
 # Tox Quick Name Lookup
+
 Revision 0.
 
 ## Goals
+
 Currently Toxcore supports ToxDNS. This is a service that sits on top of the
 historically insecure DNS system. With the idea in mind that Toxcore should be
 a ‘security first’ project; using DNS as a back-end/platform/service, is
@@ -23,6 +25,7 @@ we aim to provide an API that allows clients to quickly, simply, and securely
 servers of their choosing, without the need to use a 3rd party system/API.
 
 ## Requirements
+
 1. The system must be able to resolve any byte-string to a ToxID.
 2. It must be able to connect to, and resolve any ‘name’ without leaking
     information (who’s the real info requester, the name of the ToxID
@@ -31,15 +34,18 @@ servers of their choosing, without the need to use a 3rd party system/API.
     (LTK) of the user requesting information.
 
 ## Scope
+
 The scope of this document is only to cover the replacement for ToxDNS. Many
 other users/developers/supporters have a wish list for what TQNL could become.
 But the majority is out of the scope of this revision.
 
-###In scope
+### In scope
+
 1. Create and expose an API that clients can use for Toxcore to make and
     respond to string-to-ToxID queries.
 
-###Not in scope
+### Not in scope
+
 1. Distributed name resolution
 2. Signed name resolution
 3. Verified name resolution
@@ -47,6 +53,7 @@ But the majority is out of the scope of this revision.
 5. Name Server Lookup (method to find an unknown/new name-server)
 
 ## Technical Design
+
 - TQNL will sit on top of the DHT API, and will use DHT.c functions along with
     the corresponding net_crypto.c and crypto_core.c to connect to servers
     provided by the user.
@@ -77,6 +84,7 @@ The nonce exists to identify which packet the server is responding to, as well
     queries.
 
 ## Future Plans
+
 This specification is tentative, and intended to provide the lowest level of
     support. Ideally we'll be able to enhance TQNL with additional feature
     sets improving usability, and security.
