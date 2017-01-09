@@ -56,7 +56,7 @@
 body {
     background-color: white;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
     font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
     font-size: 18px;
     color: #333;
@@ -70,11 +70,22 @@ body {
         max-width: 750px;
     }
 }
+@media (min-width: 1600px) {
+    body {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1360px) and (min-width: 800px) {
+    body {
+        margin-left: 280px;
+        margin-right: 0;
+    }
+}
 
 h1, h2, h3, h4, h5, h6, nav {
     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .nav-title {
     counter-reset: paragraph; /*to reset paragraph counter on every header*/
     color: black;
     font-weight: 400;
@@ -87,7 +98,7 @@ h1, h2, h3 {
 h1 {
     font-size: 28px;
     font-weight: 500;
-    padding: .1em .4em;
+    padding: .1em 0;
     border-bottom: 2px solid #ddd;
     margin-bottom: 20px;
 }
@@ -96,20 +107,20 @@ h1.title {
 }
 h2 {
     font-size: 26px;
-    padding: .2em .5em;
+    padding: .2em 0;
     border-bottom: 1px solid #ddd;
 }
 h3 {
     font-size: 24px;
-    padding: .2em .7em;
+    padding: .2em 0;
     border-bottom: 1px solid #DDE8FC;
 }
-h4, h5, h6 {
+h4, h5, h6, .nav-title {
     margin-top: 12px;
     margin-bottom: 10px;
-    padding: 5px 10px;
+    padding: 5px 0;
 }
-h4 {
+h4, .nav-title {
     font-size: 22px;
 }
 h5, h6 {
@@ -133,6 +144,10 @@ h6 {
     }
 }
 
+p img {
+    /* ensure images are not wider than content */
+    max-width: 100%;
+}
 /* Number paragraphs */
 p > a.paragraph {
     align: left;
@@ -147,7 +162,7 @@ nav {
     column-count: auto;
     -moz-column-count: auto;
     -webkit-column-count: auto;
-    font-size: 15px;
+    /*font-size: 15px;*/
 }
 
 footer {
