@@ -37,7 +37,7 @@ after_success:
 - git config --global push.default simple
 - git config --global user.email "deploy@travis-ci.org"
 - git config --global user.name "Travis Deployer"
-- if [ -n "$GITHUB_TOKEN" ]; then make upload; fi
+- if [ -n "$GITHUB_TOKEN" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then make upload; fi
 
 branches:
   only:
