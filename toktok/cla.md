@@ -12,7 +12,7 @@ contributors to Us. To make this document effective, please sign it
 electronically the first time you submit a contribution. This is a legally
 binding document, so please read it carefully before agreeing to it.
 
-# Definitions
+## Definitions
 
 "You" means the individual who Submits a Contribution to Us.
 
@@ -41,9 +41,9 @@ designated in writing by You as "Not a Contribution."
 "Effective Date" means the date You execute this Agreement or the date You
 first Submit a Contribution to Us, whichever is earlier.
 
-# Grant of Rights
+## Grant of Rights
 
-## Copyright License
+### Copyright License
 
 (a) You retain ownership of the Copyright in Your Contribution and have the
 same rights to use or license the Contribution which You would have had without
@@ -57,7 +57,7 @@ modify, display, perform and distribute the Contribution as part of the
 Material; provided that this license is conditioned upon compliance with
 Section 2.3.
 
-## Patent License
+### Patent License
 
 For patent claims including, without limitation, method, process, and apparatus
 claims which You own, control or have the right to grant, now or in the future,
@@ -70,7 +70,7 @@ license is granted only to the extent that the exercise of the licensed rights
 infringes such patent claims; and provided that this license is conditioned
 upon compliance with Section 2.3.
 
-## Outbound License
+### Outbound License
 
 As a condition on the grant of rights in Sections 2.1 and 2.2, We agree to
 license the Contribution only under the terms of the license or licenses which
@@ -80,24 +80,24 @@ including both permissive and copyleft licenses, whether or not such licenses
 are subsequently disapproved (including any right to adopt any future version
 of a license if permitted).
 
-## Moral Rights
+### Moral Rights
 
 If moral rights apply to the Contribution, to the maximum extent permitted by
 law, You waive and agree not to assert such moral rights against Us or our
 successors in interest, or any of our licensees, either direct or indirect.
 
-## Our Rights
+### Our Rights
 
 You acknowledge that We are not obligated to use Your Contribution as part of
 the Material and may decide to include any Contribution We consider
 appropriate.
 
-## Reservation of Rights
+### Reservation of Rights
 
 Any rights not expressly licensed under this section are expressly reserved by
 You.
 
-# Agreement
+## Agreement
 
 You confirm that:
 
@@ -115,7 +115,7 @@ Your parents or guardian sign the Agreement.
 (d) You have followed the instructions We gave You, if You do not own the
 Copyright in the entire work of authorship Submitted.
 
-# Disclaimer
+## Disclaimer
 
 EXCEPT FOR THE EXPRESS WARRANTIES IN SECTION 3, THE CONTRIBUTION IS PROVIDED
 "AS IS". MORE PARTICULARLY, ALL EXPRESS OR IMPLIED WARRANTIES INCLUDING,
@@ -124,7 +124,7 @@ PARTICULAR PURPOSE AND NON-INFRINGEMENT ARE EXPRESSLY DISCLAIMED BY YOU TO US.
 TO THE EXTENT THAT ANY SUCH WARRANTIES CANNOT BE DISCLAIMED, SUCH WARRANTY IS
 LIMITED IN DURATION TO THE MINIMUM PERIOD PERMITTED BY LAW.
 
-# Consequential Damage Waiver
+## Consequential Damage Waiver
 
 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL YOU BE
 LIABLE FOR ANY LOSS OF PROFITS, LOSS OF ANTICIPATED SAVINGS, LOSS OF DATA,
@@ -132,9 +132,9 @@ INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL AND EXEMPLARY DAMAGES ARISING OUT
 OF THIS AGREEMENT REGARDLESS OF THE LEGAL OR EQUITABLE THEORY (CONTRACT, TORT
 OR OTHERWISE) UPON WHICH THE CLAIM IS BASED.
 
-# Miscellaneous
+## Miscellaneous
 
-## Legislation
+### Legislation
 
 This Agreement will be governed by and construed in accordance with the laws of
 the United Kingdom excluding its conflicts of law provisions. Under certain
@@ -144,18 +144,18 @@ Convention") and the parties intend to avoid the application of the UN
 Convention to this Agreement and, thus, exclude the application of the UN
 Convention in its entirety to this Agreement.
 
-## Other agreements
+### Other agreements
 
 This Agreement sets out the entire agreement between You and Us for Your
 Contributions to Us and overrides all other agreements or understandings.
 
-## Third parties
+### Third parties
 
 If You or We assign the rights or obligations received through this Agreement
 to a third party, as a condition of the assignment, that third party must agree
 in writing to abide by all the rights and obligations in the Agreement.
 
-## Failure of performance
+### Failure of performance
 
 The failure of either party to require performance by the other party of any
 provision of this Agreement in one situation shall not affect the right of a
@@ -164,7 +164,7 @@ performance under a provision in one situation shall not be considered a waiver
 of the performance of the provision in the future or a waiver of the provision
 in its entirety.
 
-## Enforcability
+### Enforcability
 
 If any provision of this Agreement is found void and unenforceable, such
 provision will be replaced to the extent possible with a provision that comes
@@ -173,7 +173,7 @@ terms and conditions set forth in this Agreement shall apply notwithstanding
 any failure of essential purpose of this Agreement or any limited remedy to the
 maximum extent possible under law.
 
-## Changes to the Agreement
+### Changes to the Agreement
 
 The effective Agreement between You and Us is the most recent one up to the
 Effective Date. Any later changes to the Agreement do not retroactively affect

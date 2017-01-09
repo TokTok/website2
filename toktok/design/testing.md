@@ -6,7 +6,7 @@ permalink: design/testing.html
 
 Language independent fuzzing and unit testing for Tox implementations
 
-# Objective
+## Objective
 
 The goal of this project is to create a language-neutral test framework to
 validate any [Tox Core Protocol](https://toktok.github.io/spec)
@@ -24,7 +24,7 @@ validating the networking part of a protocol implementation will remain vital
 to its confidence in correctness. A secondary goal is to improve the protocol
 specification with findings from its model implementation.
 
-# Background
+## Background
 
 The C implementation has a suite of unit tests and some integration tests. The
 unit tests are non-exhaustive and the integration tests too high-level.
@@ -40,7 +40,7 @@ running a Tox node and establishing a connection to it.  These tests are also
 necessarily stateful and non-deterministic, because they run in a Tox network.
 Hermetic tests are therefore difficult to achieve.
 
-# Requirements
+## Requirements
 
 The test framework must be language-independent and easy to adopt. We do not
 aim to provide any support libraries, so the API must be straightforward to
@@ -83,7 +83,7 @@ randomness.  Notably this includes generating key pairs and nonces. Tests that
 involve cryptography must therefore supply known and deterministic keys and
 nonces.
 
-# Design Ideas
+## Design Ideas
 
 The test framework consists of a model implementation and a test runner both
 written in Haskell. A “system under test” (SUT) is a protocol implementation
@@ -95,7 +95,7 @@ time guarantees and its ability to succinctly express run time behaviour. Most
 importantly, none of the model functions are allowed to be in the IO or any
 concurrency monad, ensuring their purity and therefore determinism.
 
-## Test kinds
+### Test kinds
 
 As part of a test run, the model implementation itself is validated against
 properties, and the system under test is validated against the model’s test
@@ -119,7 +119,7 @@ SUT’s implementation must also reject it. We intentionally reject the
 [Robustness principle](https://en.wikipedia.org/wiki/Robustness_principle)
 here and require strict conformance from the SUT.
 
-## Execution
+### Execution
 
 The test runner automatically discovers SUT executables in the “test”
 subdirectory. Each test execution will be run on all SUTs found there in
@@ -133,12 +133,12 @@ from its standard output. Running one instance of the executable per test
 helps ensure hermetic testing, as the implementation can’t keep state (other
 than by performing I/O, which is highly discouraged in tests).
 
-## Test protocol
+### Test protocol
 
 All integers are represented in Big Endian. The test protocol is specified as
 follows:
 
-### Test Data (SUT’s stdin)
+#### Test Data (SUT’s stdin)
 
 The test input is a length-prefixed test name and an arbitrary piece of data.
 The meaning of that data depends on the test name.
@@ -149,7 +149,7 @@ length    | `Int`    | 8 bytes
 test name | `String` | `$length` bytes
 test data | `Bytes`  | Depends on test name
 
-### Test Result (SUT’s stdout)
+#### Test Result (SUT’s stdout)
 
 In case of error, a `Failure` message is returned:
 
@@ -174,13 +174,13 @@ Field            | Type     | Length
 ---------------- | -------- | ------
 0x02 (`Skipped`) | `Tag`    | 1 byte
 
-## Reference cross-validation
+### Reference cross-validation
 
 The tests implemented here have little confidence in correctness unless they
 are themselves validated against the reference implementation in libtoxcore.
 Part of ensuring that the tests themselves conform to the specification
 involves implementing the test protocol in terms of libtoxcore.
 
-# Alternatives Considered
+## Alternatives Considered
 
 TODO (none yet).

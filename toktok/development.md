@@ -23,7 +23,7 @@ process ensures that every decision is founded in reason and that at least some
 alternatives for the decisions have been considered. We split the design into
 two stages with a document accompanying each stage.
 
-# Goals, requirements, overview
+## Goals, requirements, overview
 
 The first stage is the design overview. This document contains the high level
 overview of a design. It starts by answering the following questions:
@@ -69,7 +69,7 @@ in. A prototype typically takes about a day to implement. If you take
 significantly more time, it will turn into a full implementation. Prototypes
 should be code you can throw away easily.
 
-# Detailed technical design
+## Detailed technical design
 
 After going through several iterations of discussion and improvement, the rough
 design is expanded to become a full technical design. This is a separate
@@ -78,7 +78,7 @@ APIs in detail, with message types, effects, and result types. These can be
 language-specific or language-agnostic such as web or RPC APIs. The evolution
 of this document usually goes hand in hand with the actual implementation.
 
-# Writing code
+## Writing code
 
 In many open source projects, the people with write access to the source code
 repository will submit code frequently and break things in the process. The
@@ -101,7 +101,7 @@ in the changes. We require close to 100% test coverage. The only exceptions are
 some cases of trivial generated code (Haskell `deriving`) and unreachable code
 caused by unavoidable weaknesses in the type system.
 
-# Requirements
+## Requirements
 
 -   Code review
     -   [Reviewable](https://reviewable.io) for code reviews.
@@ -127,7 +127,7 @@ caused by unavoidable weaknesses in the type system.
         test suite from 4 weeks ago.
     -   No public releases (for now) to encourage focus within the project.
 
-# Standards
+## Standards
 
 We will hold ourselves and our contributors to high standards. Therefore, we
 require:
@@ -150,7 +150,7 @@ As always, every standard is subject to personal judgement, so if a rule does
 not make sense in a certain situation, you're free to ignore it, so long as
 you're able to justify your reasoning.
 
-# Repositories
+## Repositories
 
 We have three main repositories:
 
@@ -166,7 +166,7 @@ We have three main repositories:
     version of the specification. Contributors may make PRs to this
     repository, which will then be ported back into the hstox repository.
 
-# Stepwise howto for a contribution
+## Stepwise howto for a contribution
 
 -   Fork the repository you want to contribute to on Github.
 -   Make a new branch in their own repository, named as you like (usually

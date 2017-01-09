@@ -5,7 +5,7 @@ permalink: plan.html
 menu_index: 3
 ---
 
-# Objective
+## Objective
 
 Following a step plan will involve making compromises. People understandably
 want to work on exciting new features much more than on making a stable basis
@@ -13,7 +13,7 @@ for future development. It is now time to pay our technical debt and clean
 things up. After paying this price, we will be able to move forward more
 quickly, and to attract more contributors.
 
-## Goals
+### Goals
 
 -   Focus: avoid thinly spreading our scarce human resources, focus on a
     single goal and put all the resources behind that.
@@ -24,19 +24,19 @@ quickly, and to attract more contributors.
     that client to a state where its code can be considered high quality and
     its user experience is satisfactory.
 
-## Non-goals
+### Non-goals
 
 -   Rewrite toxcore. We don’t have the resources to do this project at this
     time. It is not off the map, but won’t be a focus point.
 -   Discontinue all clients except one. Pushing a single client does not mean
     abandoning all others, but their development will be reduced temporarily.
 
-# Phases
+## Phases
 
 The project plan is split into phases. In each phase, we follow a slightly
 different development process, adjusted to the available tools and resources.
 
-## Common
+### Common
 
 The following guidelines are the same in all phases:
 
@@ -57,7 +57,7 @@ The following guidelines are the same in all phases:
     reviewer that is not the PR author.
 -   HEAD of master should always be a signed commit.
 
-## Phase 1: Establishing a basis
+### Phase 1: Establishing a basis
 
 In phase 1, we assume a young team of people who haven’t worked together much
 before.
@@ -69,7 +69,7 @@ before.
 -   The hstox repository contains the specification source in LaTeX (literate
     Haskell) format. Text reviews are done on the spec repository.
 
-### Tasks for phase 1
+#### Tasks for phase 1
 
 -   toxcore
     -   (P1) Fix the current test failures and enable continuous testing on
@@ -95,7 +95,7 @@ before.
     -   (P1) Rewrite the specification as tests are added.
     -   (P3) Generate parts of the spec from code to ensure up-to-dateness.
 
-## Phase 2: Stabilising the protocol
+### Phase 2: Stabilising the protocol
 
 After we have tests in place, we will improve the Tox protocol bit by bit. If
 possible, we will do this while observing the support horizon. If it turns out
@@ -110,7 +110,7 @@ becomes more stable and tested, we can tighten or introduce other guidelines.
     bear the responsibility for keeping up the standards.
 -   In phase 2, the four projects evolve in lockstep.
 
-### Tasks for phase 2
+#### Tasks for phase 2
 
 -   toxcore & spec
     -   (P1) Identify issues with the current protocol.
@@ -118,7 +118,7 @@ becomes more stable and tested, we can tighten or introduce other guidelines.
     -   (P1) Re-evaluate target use cases and possibly redesign parts of the
         protocol to support them.
 
-## Phase 3: Release cycles and features
+### Phase 3: Release cycles and features
 
 By now, we will have a strong testing infrastructure and a 4-week support
 horizon. This allows us to make releases, meaning:

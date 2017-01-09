@@ -9,7 +9,7 @@ to everybody.
 
 ![TokTok Android client](static/img/toktok/chat-small.png)
 
-# Current focus
+## Current focus
 
 Focus means we work on a small set of projects (one or two at a time) and
 concentrate all our work on getting those projects finished completely before
@@ -21,7 +21,7 @@ Our current focus is:
 -   Create a free [reference
     implementation](https://github.com/TokTok/hs-toxcore) of that protocol.
 
-# Contact us
+## Contact us
 
 If you're interested in what we're doing, feel free to stop by on IRC in
 [#toktok on Freenode](irc://irc.freenode.net/#toktok). Feel free to stick

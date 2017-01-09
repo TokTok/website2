@@ -9,7 +9,7 @@ License Agreement](cla.html). Any errors in or misinterpretations of the
 following text have no legal effect. See CLA for the real thing that you can
 feed to [lawyer cats](static/img/lawyer-cat.jpg).
 
-# Definitions
+## Definitions
 
 -   "We" is toktok-team.
 -   "You" is you, the person who submits code to GitHub.
@@ -23,9 +23,9 @@ feed to [lawyer cats](static/img/lawyer-cat.jpg).
 -   "Effective Date" is there so you can sign the CLA and it retroactively
     applies to past contributions you made before signing it.
 
-# Grant of Rights
+## Grant of Rights
 
-## Copyright License
+### Copyright License
 
 (a) You keep the Copyright.
 
@@ -35,7 +35,7 @@ stays under whatever license it was), but we can change it for future
 versions. See 2.3 for what kind of licenses we can use (spoiler alert: only
 FOSS licenses).
 
-## Patent License
+### Patent License
 
 If your code is patented, you need to have the right to give us a patent
 license, and you do that by signing the CLA. Also, if you file patents about
@@ -43,12 +43,12 @@ your contribution in the future, we get a license. This is so we don't need to
 suddenly pay you when you realise you made something really cool and you must
 now make money off of it.
 
-## Outbound License
+### Outbound License
 
 This section promises that we only use FSF-approved licenses. Basically, this
 promises that we won't make your code proprietary.
 
-## Moral Rights
+### Moral Rights
 
 TokTok (and Tox in general) wants to give everybody in the world privacy. Your
 contribution helps us achieve that goal. Everybody includes bad people, so our
@@ -57,15 +57,15 @@ don't want to help bad people anymore, and you feel that monitoring and
 tracking all citizens is a good thing, then you can't force us to stop and you
 can't revoke your contribution.
 
-## Our Rights
+### Our Rights
 
 We may or may not use your contribution, that's up to us.
 
-## Reservation of Rights
+### Reservation of Rights
 
 You keep all the rights you didn't license to us.
 
-# Agreement
+## Agreement
 
 You confirm that:
 
@@ -79,36 +79,36 @@ parents or employer).
 (d) You've talked to us if you don't own the whole contribution yourself (e.g.
 you made it together with a friend).
 
-# Disclaimer
+## Disclaimer
 
 You don't give us any warranties for the contribution other than the ones in
 section 3. So, for example you're not claiming that the code you wrote is
 useful or safe. Hopefully it is, but you can't be sued if it's not.
 
-# Consequential Damage Waiver
+## Consequential Damage Waiver
 
 If your code is crap and people lose money or data because of it, you won't be
 sued.
 
-# Miscellaneous
+## Miscellaneous
 
-## Legislation
+### Legislation
 
 TokTok is legally based in the United Kingdom, so the UK laws apply to this
 agreement.
 
-## Other agreements
+### Other agreements
 
 There are no other agreements, only ~~[ZUUL](static/img/zuul.jpg)~~CLA. Things
 we agree on e.g. via IRC or otherwise are not legally binding.
 
-## Third parties
+### Third parties
 
 If toktok-team gets a new member, that person needs to promise (in writing) to
 follow the rules in the CLA. If you transfer Copyright to someone else, they
 also need to promise that.
 
-## Failure of performance
+### Failure of performance
 
 If we break the rules and you don't sue us, that doesn't mean we get free pass
 to do whatever we like. If we break the rules again, you can still sue. The
@@ -117,13 +117,13 @@ same applies to you breaking the rules.
 If it's necessary to break the rules, we can have an external agreement for
 one time, but after that, the CLA rules apply again.
 
-## Enforcability
+### Enforcability
 
 If the CLA is partially void because of some laws, that doesn't mean the whole
 agreement is void, only that part. Also, that part will be enforced as much as
 possible using other rules that are close to its intent.
 
-## Changes to the Agreement
+### Changes to the Agreement
 
 If the CLA changes, it doesn't affect you, unless you sign the new one as
 well. The git history shows when you signed, so we can always tell which CLA
