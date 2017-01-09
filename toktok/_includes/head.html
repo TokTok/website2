@@ -5,11 +5,14 @@
 
   <title>{{ site.title }} - {{ page.title }}</title>
   <meta name="description" content="{{ page.content | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
   {% assign depth = page.url | append:'X' | split:'/' | size %}
   {% capture relative %}{% for i in (3..depth) %}../{% endfor %}{% endcapture %}
   <link rel="stylesheet" href="{{ relative }}static/css/main.css" media="screen">
   <link rel="stylesheet" href="{{ relative }}static/css/rust.css" media="screen">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  {% for script in page.js-includes %}
+    <script defer src="{{ relative }}static/js/{{ script }}"></script>
+  {% endfor %}
 </head>
