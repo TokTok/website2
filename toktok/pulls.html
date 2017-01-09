@@ -5,6 +5,9 @@ permalink: pulls.html
 menu_index: 5
 ---
 
+<div class="loading">Loading Pull requests...</div>
+
+<script src="{{ relative }}static/css/twemoji-2.2.3.min.js"></script>
 <script>
   var repoSection = document.querySelector('main');
   var requestHeaders = new Headers();
@@ -15,7 +18,7 @@ menu_index: 5
 
   var stateIcon = {
     clean: '&#x2705;',
-    dirty: '&#x274C;',
+    dirty: '&#x274c;',
     unknown: '&#x231b;',
     unstable: '&#x1f6a7;',
   };
@@ -23,6 +26,10 @@ menu_index: 5
   fetch('https://git-critique.herokuapp.com/hello/pulls', requestInit)
   .then(function(response) { return response.json(); })
   .then(function(json) {
+
+    var loadingDiv = repoSection.querySelector("div.loading");
+    loadingDiv.parentNode.removeChild(loadingDiv);
+
     for (var i = 0; i < json.length; i++) {
       if (json[i].length > 0) {
         var repoTitle = document.createElement('h2');
@@ -62,6 +69,14 @@ menu_index: 5
           prTable.appendChild(listItem);
         }
         repoSection.appendChild(prTable);
+        // parse emoji in the content to ensure it gets displayed correctly in all browsers
+        twemoji.size = '16x16'; // This can be set to 16x16, 36x36, or 72x72
+        console.log('pargins...');
+        twemoji.parse(prTable, {
+            callback: function(icon, options) {
+              return '{{ relative }}static/img/emoij/' + options.size + '/' + icon + '.png';
+            }
+        });
       }
     }
   });

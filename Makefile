@@ -18,3 +18,15 @@ upload: toktok-site
 	cd $(WEB_NAME) && git add -A .
 	cd $(WEB_NAME) && git commit --amend --reset-author -m'Updated website'
 	cd $(WEB_NAME) && git push --force --quiet
+
+# copy emoijs used on the site to images
+emoij:
+	mkdir -p toktok/static/img/emoij/16x16
+	for codepoint in $$(grep -Prhio '&#x[\da-f]+;' toktok/ | grep -ioP '[\da-f]+'); do \
+		echo $$codepoint; \
+		wget https://raw.githubusercontent.com/twitter/twemoji/gh-pages/16x16/$$codepoint.png -O toktok/static/img/emoij/16x16/$${codepoint}.png ; \
+	done
+
+clean-emoij:
+	rm -r toktok/static/img/emoij/16x16
+
