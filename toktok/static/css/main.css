@@ -8,9 +8,15 @@ body {
 }
 
 #content {
-  margin-left: 2em;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
+  margin: 0 1.5em;
+  padding: 5px 0 25px 0;
+}
+
+@media (max-width: 750px) {
+  /* give tables more space on mobile */
+  #content table {
+    margin: 0 -1.5em;
+  }
 }
 
 h1 {
@@ -27,7 +33,7 @@ h2, h3, h4, h5, h6 {
   color: black;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 800px) {
   #sidemenu {
     background-color: #fff;
     box-shadow: 0 0 3px #888888;
@@ -35,7 +41,19 @@ h2, h3, h4, h5, h6 {
     top: 1ex;
     left: 1ex;
     padding: 1em;
+    width: 256px;
   }
+}
+@media (max-width: 799px) {
+  /* style for side menu when above screen */
+  #sidemenu {
+    padding-top: 20px;
+    margin: 0 1.5em;
+  }
+}
+
+#sidemenu h4 {
+  padding: 0;
 }
 
 #sidemenu > ul {

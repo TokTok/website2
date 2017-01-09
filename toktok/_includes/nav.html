@@ -1,5 +1,6 @@
 <nav id="sidemenu">
   <ul class="nav tree">
+    <h4>Navigation</h4>
     {% assign nav_pages = site.html_pages | sort: 'menu_index' %}
     {% for p in nav_pages %}
       {% if p.title and p.menu_index %}
