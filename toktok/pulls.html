@@ -58,7 +58,7 @@ menu_index: 5
             "<td>" + branchWithTooltip       + "</td>" +
             "<td>" + json[i][j].prTitle      + "</td>" +
             "<td>" + stateIcon[json[i][j].prState] + "</td>" +
-            "<td>" + json[i][j].prReviewers  + "</td>";
+            "<td>" + json[i][j].prReviewers.toString().replace(/,/g , ", ") + "</td>";
           prTable.appendChild(listItem);
         }
         repoSection.appendChild(prTable);

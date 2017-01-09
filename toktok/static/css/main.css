@@ -73,7 +73,7 @@ tr.packet-row:nth-child(odd) {
 .pr-table td:nth-child(2) { width: 10em; word-break: break-all; }
 .pr-table td:nth-child(3) { width: 24em; }
 .pr-table td:nth-child(4) { width: 4em; }
-.pr-table td:nth-child(5) { width: 10em; word-break: break-all; }
+.pr-table td:nth-child(5) { width: 10em; }
 
 /* Tooltip container */
 .tooltip {
@@ -91,7 +91,7 @@ tr.packet-row:nth-child(odd) {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
