@@ -44,13 +44,14 @@ But the majority is out of the scope of this revision.
 2. Signed name resolution
 3. Verified name resolution
 4. Relayed name resolution
+5. Name Server Lookup (method to find an unknown/new name-server)
 
-## Design
+## Technical Design
 - TQNL will sit on top of the DHT API, and will use DHT.c functions along with
     the corresponding net_crypto.c and crypto_core.c to connect to servers
     provided by the user.
-- Users will call the tox_function() with the server lookup information, and
-    the string to be queried.
+- Users will call the tox_function() with the server lookup information (IP or
+    hostname, Port, Public Key), and the string to be queried.
 - Servers will be specified by a Domain name, or IP address, a port, and a
     public key.
 - TQNL will connect to the server, deliver the query packet, and then store
