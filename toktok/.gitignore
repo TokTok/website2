@@ -1,3 +1,6 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# ignore emoij, they are downloaded on deployment
+/static/img/emoij

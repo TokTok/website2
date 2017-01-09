@@ -103,3 +103,8 @@ tr.packet-row:nth-child(odd) {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+img.emoji {
+  margin: 0 !important;
+  display: inline !important;
+}
