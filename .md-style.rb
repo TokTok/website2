@@ -1,5 +1,6 @@
 all
-
+# The first-level heading is prepended during generation of .html files.
+rule 'MD002', :level => 2
 # Rustdoc and some other markdown parsers don't like 2-space list indent.
 rule 'MD007', :indent => 4
 # Pandoc generates numbered ordered lists.
