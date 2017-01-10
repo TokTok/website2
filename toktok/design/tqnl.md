@@ -28,8 +28,8 @@ servers of their choosing, without the need to use a 3rd party system/API.
 2.  It must be able to connect to, and resolve any ‘name’ without leaking
     information (who’s the real info requester, the name of the ToxID
     searched, or the real ToxID itself).
-3.  Under expected/default configuration it must not expose the Long Term Key
-    (LTK) of the user requesting information.
+3.  Under expected/default configuration it must not expose the long term
+    public key of the user requesting information.
 
 ## Scope
 
