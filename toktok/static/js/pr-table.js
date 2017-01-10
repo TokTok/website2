@@ -45,8 +45,8 @@ function createPrTable() {
             "</a>";
           var githubBranch =
             " <a href='https://github.com/TokTok/" + json[i][j].prRepoName +
-            "/" + json[i][j].prNumber + "'>" + json[i][j].prBranch.replace(/_/g, "_<wbr>") +
-            "</a>";
+            "/pull/" + json[i][j].prNumber + "'>" +
+            json[i][j].prBranch.replace(/_/g, "_<wbr>") + "</a>";
 
           // Insert <wbr> tags after _ characters for neater word-wrapping.
           var titleWithTooltip =
@@ -54,11 +54,11 @@ function createPrTable() {
             "&#8203;<span class='tooltiptext'>" + json[i][j].prUser + "</span>" +
             "</div>";
           listItem.innerHTML =
-            "<td>" + reviewableNumber                            + "</td>" +
-            "<td>" + githubBranch                                + "</td>" +
-            "<td>" + titleWithTooltip                            + "</td>" +
-            "<td>" + stateIcon[json[i][j].prState]               + "</td>" +
-            "<td>" + json[i][j].prReviewers.join(", ")           + "</td>";
+            "<td>" + reviewableNumber                  + "</td>" +
+            "<td>" + githubBranch                      + "</td>" +
+            "<td>" + titleWithTooltip                  + "</td>" +
+            "<td>" + stateIcon[json[i][j].prState]     + "</td>" +
+            "<td>" + json[i][j].prReviewers.join(", ") + "</td>";
           prTable.appendChild(listItem);
         }
         repoSection.appendChild(prTable);
