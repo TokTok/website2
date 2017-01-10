@@ -73,7 +73,7 @@ tr.packet-row:nth-child(odd) {
 /* I don't like this. */
 .pr-table td { padding: .3em; font-size: .8em; }
 .pr-table td:nth-child(1) { width: 2.5em; text-align: center; }
-.pr-table td:nth-child(2) { width: 10em; word-break: break-all; }
+.pr-table td:nth-child(2) { width: 10em; }
 .pr-table td:nth-child(3) { width: 32em; }
 .pr-table td:nth-child(4) { width: 4em; text-align: center; }
 .pr-table td:nth-child(5) { width: 10em; }
@@ -87,14 +87,14 @@ tr.packet-row:nth-child(odd) {
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: collapse;
-  width: 120px;
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px;
   border-radius: 6px;
+  margin-top: -5px;
+  margin-left: 5px;
 
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
 }

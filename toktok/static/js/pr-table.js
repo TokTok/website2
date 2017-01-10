@@ -39,21 +39,24 @@ function createPrTable() {
 
         for (var j = 0; j < json[i].length; j++) {
           var listItem = document.createElement('tr');
-          var prLink =
-            "<a href='https://github.com/TokTok/" + json[i][j].prRepoName +
-            "/pull/" + json[i][j].prNumber + "'>" + json[i][j].prNumber +
+          var reviewableNumber =
+            "<a href='https://reviewable.io/reviews/toktok/" + json[i][j].prRepoName +
+            "/" + json[i][j].prNumber + "'>" + json[i][j].prNumber +
             "</a>";
-          var reviewableLink =
-            " <a href='https://reviewable.io/reviews/toktok/" + json[i][j].prRepoName +
-            "/" + json[i][j].prNumber + "'>&#x1f50d;</a>";
-          var branchWithTooltip =
-            "<div class='tooltip'>" + json[i][j].prBranch +
-            "<span class='tooltiptext'>" + json[i][j].prUser + "</span>" +
+          var githubBranch =
+            " <a href='https://github.com/TokTok/" + json[i][j].prRepoName +
+            "/pull/" + json[i][j].prNumber + "'>" +
+            json[i][j].prBranch.replace(/_/g, "_<wbr>") + "</a>";
+
+          // Insert <wbr> tags after _ characters for neater word-wrapping.
+          var titleWithTooltip =
+            "<div class='tooltip'>" + json[i][j].prTitle.replace(/_/g, "_<wbr>") +
+            "&#8203;<span class='tooltiptext'>" + json[i][j].prUser + "</span>" +
             "</div>";
           listItem.innerHTML =
-            "<td>" + prLink + reviewableLink           + "</td>" +
-            "<td>" + branchWithTooltip                 + "</td>" +
-            "<td>" + json[i][j].prTitle                + "</td>" +
+            "<td>" + reviewableNumber                  + "</td>" +
+            "<td>" + githubBranch                      + "</td>" +
+            "<td>" + titleWithTooltip                  + "</td>" +
             "<td>" + stateIcon[json[i][j].prState]     + "</td>" +
             "<td>" + json[i][j].prReviewers.join(", ") + "</td>";
           prTable.appendChild(listItem);
