@@ -15,6 +15,7 @@ as a basis for your proposal document.
 
 -   [Design Proposal Template](design/template.html)
 -   [Tox Core Test Framework](design/testing.html)
+-   [Tox Quick Name Lookup](design/tqnl.html)
 
 Older designs not yet in Markdown format:
 
