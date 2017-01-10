@@ -54,11 +54,11 @@ function createPrTable() {
             "&#8203;<span class='tooltiptext'>" + json[i][j].prUser + "</span>" +
             "</div>";
           listItem.innerHTML =
-            "<td>" + reviewableNumber                            + "</td>" +
-            "<td>" + githubBranch                                + "</td>" +
-            "<td>" + titleWithTooltip                            + "</td>" +
-            "<td>" + stateIcon[json[i][j].prState]               + "</td>" +
-            "<td>" + json[i][j].prReviewers.join(", ")           + "</td>";
+            "<td>" + reviewableNumber                  + "</td>" +
+            "<td>" + githubBranch                      + "</td>" +
+            "<td>" + titleWithTooltip                  + "</td>" +
+            "<td>" + stateIcon[json[i][j].prState]     + "</td>" +
+            "<td>" + json[i][j].prReviewers.join(", ") + "</td>";
           prTable.appendChild(listItem);
         }
         repoSection.appendChild(prTable);
