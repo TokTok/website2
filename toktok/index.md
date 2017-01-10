@@ -29,6 +29,12 @@ If you're interested in what we're doing, feel free to stop by on IRC in
 around and discuss TokTok related topics. If you do join, please stay on topic
 and respect other people.
 
+# Get started
+
+[Collection of resources for developers.](./get-started.html)
+
+# Build status
+
 You can file bugs against one of the TokTok projects on Github. Build status of
 all projects can be viewed on this page.
 
