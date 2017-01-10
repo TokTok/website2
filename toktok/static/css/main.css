@@ -73,7 +73,7 @@ tr.packet-row:nth-child(odd) {
 /* I don't like this. */
 .pr-table td { padding: .3em; font-size: .8em; }
 .pr-table td:nth-child(1) { width: 2.5em; text-align: center; }
-.pr-table td:nth-child(2) { width: 10em; word-break: break-all; }
+.pr-table td:nth-child(2) { width: 10em; }
 .pr-table td:nth-child(3) { width: 32em; }
 .pr-table td:nth-child(4) { width: 4em; text-align: center; }
 .pr-table td:nth-child(5) { width: 10em; }
