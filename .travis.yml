@@ -31,6 +31,9 @@ script:
 - curl https://git-critique.herokuapp.com/hello/changelog >> toktok/changelog/c-toxcore.md
 - curl https://git-critique.herokuapp.com/hello/roadmap >> toktok/roadmap/c-toxcore.md
 - make toktok-site
+- mkdir -p ~/.linkchecker/ && \
+    echo "[filtering]" > ~/.linkchecker/linkcheckerrc && \
+    echo "ignorewarnings=http-robots-denied" >> ~/.linkchecker/linkcheckerrc
 - linkchecker --ignore-url "https://travis-ci.org.*" --ignore-url "irc://.*" toktok-site || true
 
 after_success:
