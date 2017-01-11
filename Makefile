@@ -16,17 +16,13 @@ toktok-site: $(shell which jekyll) $(shell find toktok -type f) emoij
 	cd toktok && jekyll build && mv _site ../$@
 
 #
-# single pages, which external content
+# single pages, generated from external content
 #
 changelog: toktok/changelog/c-toxcore.md
-toktok/changelog/c-toxcore.md:
-	cp $@.dist $@
-	curl https://git-critique.herokuapp.com/hello/changelog >> $@
-
 roadmap: toktok/roadmap/c-toxcore.md
-toktok/roadmap/c-toxcore.md:
-	cp $@.dist $@
-	curl https://git-critique.herokuapp.com/hello/roadmap >> $@
+toktok/%/c-toxcore.md: toktok/%/c-toxcore.md.dist
+	cp $< $@
+	curl https://git-critique.herokuapp.com/hello/$* >> $@
 
 spec: toktok/spec.md
 toktok/spec.md: hs-toxcore

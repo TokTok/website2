@@ -6,8 +6,9 @@ _site
 /static/img/emoij
 
 # auto generated files
-/toktok/changelog/c-toxcore.md
-/toktok/roadmap/c-toxcore.md
-/toktok/spec.md
+/changelog/c-toxcore.md
+/roadmap/c-toxcore.md
+/spec.md
+/res
 
 

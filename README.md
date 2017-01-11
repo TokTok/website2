@@ -6,8 +6,8 @@ The new website with something better than Yst (also, change the title)
 
 To work on the website you need the following things:
 
-- Jekyll and mdl via ruby gems: `gem install jekyll mdl` (mdl is optinal, for linting the markdown)
-- pandoc, e.g. via `apt-get install pandoc` or <http://pandoc.org/installing.html>
+- Jekyll and mdl via ruby gems: `gem install jekyll mdl` (mdl is optional, for linting the markdown)
+- pandoc, e.g. via `apt-get install pandoc` or `cabal install pandoc` or <http://pandoc.org/installing.html>
   (optional for building the spec)
 - linkchecker via `apt-get install linkchecker`
   (optional for link checking)
@@ -19,5 +19,5 @@ The follwing make targets are available:
 - `make roadmap`: download roadmaps (included in `all`)
 - `make spec`: download and parse the spec with pandoc (included in `all`)
 - `make lint`: run markdown linter `mdl`
-- `make check`: runs linkchecker
+- `make check`: run linkchecker
 
