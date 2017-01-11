@@ -17,7 +17,7 @@ function createPrTable() {
   fetch('https://git-critique.herokuapp.com/hello/pulls', requestInit)
   .then(function(response) { return response.json(); })
   .then(function(json) {
-    var loadingDiv = repoSection.querySelector("div.loading");
+    var loadingDiv = repoSection.querySelector("p.loading");
     loadingDiv.parentNode.removeChild(loadingDiv);
 
     for (var i = 0; i < json.length; i++) {
