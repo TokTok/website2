@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Tox Quick Name Lookup Spec
+authors: grayhatter
+first proposed: 2016-10-07
+last revision: 2017-01-10
 revision: 0
 permalink: design/tqnl.html
 ---
