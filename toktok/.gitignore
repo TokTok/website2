@@ -4,3 +4,11 @@ _site
 
 # ignore emoij, they are downloaded on deployment
 /static/img/emoij
+
+# auto generated files
+/changelog/c-toxcore.md
+/roadmap/c-toxcore.md
+/spec.md
+/res
+
+
