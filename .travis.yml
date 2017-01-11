@@ -17,21 +17,12 @@ env:
 
 install:
 - gem install jekyll mdl
-- git clone --depth=1 https://github.com/TokTok/hs-toxcore
+- make hs-toxcore
 
 script:
-- mdl -w -s .md-style.rb toktok
-- cp -a hs-toxcore/res toktok/
-- >
-    (cd hs-toxcore && \
-     pandoc -f latex+lhs -t native src/tox/Network/Tox.lhs \
-       | grep -v '^,CodeBlock ' \
-       | pandoc -f native -t markdown_github \
-       >> ../toktok/spec.md)
-- curl https://git-critique.herokuapp.com/hello/changelog >> toktok/changelog/c-toxcore.md
-- curl https://git-critique.herokuapp.com/hello/roadmap >> toktok/roadmap/c-toxcore.md
-- make toktok-site
-- linkchecker --ignore-url "https://travis-ci.org.*" --ignore-url "irc://.*" toktok-site || true
+- make lint
+- make all
+- make check || true
 
 after_success:
 - git config --global push.default simple
