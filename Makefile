@@ -6,12 +6,10 @@ else
 WEB_REPO := git@github.com:TokTok/$(WEB_NAME)
 endif
 
-all: changelog roadmap spec toktok-site
-
 #
 # build the website with jekyll
 #
-toktok-site: $(shell which jekyll) $(shell find toktok -type f) emoij
+toktok-site: $(shell which jekyll) $(shell find toktok -type f) emoij changelog roadmap spec
 	rm -rf $@
 	cd toktok && jekyll build && mv _site ../$@
 
