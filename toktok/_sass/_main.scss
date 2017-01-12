@@ -1,0 +1,128 @@
+html {
+  background-color: #eee;
+}
+
+body {
+  background-color: #fff;
+  box-shadow: 0 0 3px #888;
+}
+
+#content {
+  margin: 0 1.5em;
+  padding: 5px 0 25px 0;
+
+  @media (max-width: 500px) {
+    // TODO(cebe): make tables responsive
+    /*table {
+      margin: 0 -1.5em;
+    }*/
+  }
+}
+
+h1 {
+  color: #38761d;
+}
+
+h2.subtitle {
+  color: #666;
+  font-size: 17px;
+  border: none;
+}
+
+h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+#sidemenu {
+  &> ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .current a {
+    color: black;
+  }
+
+  @media (min-width: 800px) {
+    background-color: #fff;
+    box-shadow: 0 0 3px #888;
+    position: fixed;
+    top: 1ex;
+    left: 1ex;
+    padding: 1em;
+    width: 256px;
+
+    .nav-title {
+      display: none;
+    }
+  }
+
+  @media (max-width: 799px) {
+    padding-top: 20px;
+    margin: 0 1.5em;
+  }
+}
+
+figure {
+  margin-left: 0;
+}
+
+.kw, .ot {
+  color: blue;
+}
+
+.dt {
+  color: brown;
+}
+
+tr.packet-row:nth-child(odd) {
+  background: #eee;
+}
+
+.pr-table {
+  width: 100%;
+
+  th {
+    font-size: .9em;
+  }
+
+  td {
+    padding: .3em;
+    font-size: .8em;
+
+    &:nth-child(1) { width: 2.5em; text-align: center; }
+    &:nth-child(2) { width: 10em; }
+    &:nth-child(3) { width: 32em; }
+    &:nth-child(4) { width: 4em; text-align: center; }
+    &:nth-child(5) { width: 10em; }
+  }
+}
+
+.tooltip {
+  display: inline-block;
+  // If you want dots under the hoverable text
+  border-bottom: 1px dotted black;
+
+  .tooltiptext {
+    visibility: collapse;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: -5px;
+    margin-left: 5px;
+
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}
+
+img.emoji {
+  margin: 0 !important;
+  display: inline !important;
+}

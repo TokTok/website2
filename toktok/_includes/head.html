@@ -10,7 +10,6 @@
   {% assign depth = page.url | append:'X' | split:'/' | size %}
   {% capture relative %}{% for i in (3..depth) %}../{% endfor %}{% endcapture %}
   <link rel="stylesheet" href="{{ relative }}static/css/main.css" media="screen">
-  <link rel="stylesheet" href="{{ relative }}static/css/rust.css" media="screen">
 
   {% for script in page.js-includes %}
     <script defer src="{{ relative }}static/js/{{ script }}"></script>
