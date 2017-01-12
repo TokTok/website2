@@ -10,7 +10,7 @@ permalink: design/tqnl.html
 
 Revision 0.
 
-## Goals
+# Goals
 
 Currently Toxcore supports ToxDNS. This is a service that sits on top of the
 historically insecure DNS system. With the idea in mind that Toxcore should be
@@ -25,7 +25,7 @@ we aim to provide an API that allows clients to quickly, simply, and securely
 (without the need to create or manage the security themselves) interface with
 servers of their choosing, without the need to use a 3rd party system/API.
 
-## Requirements
+# Requirements
 
 1.  The system must be able to resolve any byte-string to a ToxID.
 2.  It must be able to connect to, and resolve any ‘name’ without leaking
@@ -34,18 +34,18 @@ servers of their choosing, without the need to use a 3rd party system/API.
 3.  Under expected/default configuration it must not expose the long term
     public key of the user requesting information.
 
-## Scope
+# Scope
 
 The scope of this document is only to cover the replacement for ToxDNS. Many
 other users/developers/supporters have a wish list for what TQNL could become.
 But the majority is out of the scope of this revision.
 
-### In scope
+## In scope
 
 1.  Create and expose an API that clients can use for Toxcore to make and
     respond to string-to-ToxID queries.
 
-### Not in scope
+## Not in scope
 
 1.  Distributed name resolution
 2.  Signed name resolution
@@ -53,7 +53,7 @@ But the majority is out of the scope of this revision.
 4.  Relayed name resolution
 5.  Name Server Lookup (method to find an unknown/new name-server)
 
-## Technical Design
+# Technical Design
 
 -   TQNL will sit on top of the DHT API, and will use DHT.c functions along
     with the corresponding `net_crypto.c` and `crypto_core.c` to connect to
@@ -84,7 +84,7 @@ as prohibit replays, or pre-generation.
 -   At this point Toxcore will drop that pending query from its list of
     pending queries.
 
-## Future Plans
+# Future Plans
 
 This specification is tentative, and intended to provide the lowest level of
 support. Ideally we'll be able to enhance TQNL with additional feature sets
