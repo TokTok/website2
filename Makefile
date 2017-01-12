@@ -6,12 +6,10 @@ else
 WEB_REPO := git@github.com:TokTok/$(WEB_NAME)
 endif
 
-all: changelog roadmap spec toktok-site
-
 #
 # build the website with jekyll
 #
-toktok-site: $(shell which jekyll) $(shell find toktok -type f) emoij
+toktok-site: $(shell which jekyll) $(shell find toktok -type f) emoij changelog roadmap spec
 	rm -rf $@
 	cd toktok && jekyll build && mv _site ../$@
 
@@ -28,17 +26,23 @@ spec: toktok/spec.md
 toktok/spec.md: hs-toxcore $(shell find hs-toxcore -name "*.lhs" 2> /dev/null)
 	cp $@.dist $@
 	cp -a hs-toxcore/res toktok/
-	cd hs-toxcore && \
-		pandoc -f latex+lhs -t native src/tox/Network/Tox.lhs \
-		| grep -v '^,CodeBlock ' \
-		| pandoc -f native -t markdown_github \
-		>> ../toktok/spec.md
+	! which pandoc || {				\
+		cd hs-toxcore;				\
+		pandoc					\
+			-f latex+lhs			\
+			-t native			\
+			src/tox/Network/Tox.lhs 	\
+		| grep -v '^,CodeBlock ' 		\
+		| pandoc -f native -t markdown_github	\
+		>> ../toktok/spec.md;			\
+	}
 
+.PHONY: hs-toxcore
 hs-toxcore:
-	if [ -d $@ ] ; then \
-		cd $@ && git pull ;\
+	if [ -d $@ ]; then \
+		cd $@ && git pull; \
 	else \
-		git clone --depth=1 https://github.com/TokTok/hs-toxcore $@ ;\
+		git clone --depth=1 https://github.com/TokTok/hs-toxcore $@; \
 	fi
 
 #

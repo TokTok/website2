@@ -21,7 +21,7 @@ install:
 
 script:
 - make lint
-- make all
+- make toktok-site
 - make check || true
 
 after_success:
