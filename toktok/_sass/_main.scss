@@ -1,8 +1,10 @@
 /**
- * Copyright 2013-2014 The Rust Project Developers. See the COPYRIGHT
- * file at the top-level directory of this distribution and at
- * http://rust-lang.org/COPYRIGHT.
+ * Copyright 2016-2017 TokTok contributors.
+ * Copyright 2013-2014 The Rust Project Developers.
+ * See the COPYRIGHT file at the top-level directory of this
+ * distribution and at http://rust-lang.org/COPYRIGHT.
  * With elements taken from Bootstrap v3.0.2 (MIT licensed).
+ *
  *
  * Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
  * http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
@@ -61,7 +63,7 @@ body {
   box-shadow: 0 0 3px #888;
   margin: 0 auto;
   padding: 0;
-  font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+  font-family: $main-fonts;
   font-size: 18px;
   color: #333;
   line-height: 1.428571429;
@@ -96,7 +98,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, nav {
-  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $heading-fonts;
 }
 
 h1, h2, h3, h4, h5, h6, .nav-title {
@@ -187,16 +189,16 @@ h6 {
   }
 }
 
-// Number paragraphs
-p > a.paragraph {
-  align: left;
-  position: absolute;
-  margin-left: -29px;
-  color: #CCC;
-}
-
-p, nav {
+p {
   margin: 0 0 1em 0;
+
+  // Number paragraphs
+  &> a .paragraph {
+    align: left;
+    position: absolute;
+    margin-left: -29px;
+    color: #CCC;
+  }
 }
 
 img {
@@ -209,9 +211,7 @@ img {
 }
 
 nav {
-  column-count: auto;
-  -moz-column-count: auto;
-  -webkit-column-count: auto;
+  margin: 0 0 1em 0;
 
   ul {
     display: block;
@@ -282,7 +282,7 @@ a {
 }
 
 pre, code {
-  font-family: "Source Code Pro", Menlo, Monaco, Consolas, "DejaVu Sans Mono", monospace;
+  font-family: $code-fonts;
   word-wrap: break-word;
 }
 

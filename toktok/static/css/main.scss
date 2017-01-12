@@ -3,4 +3,8 @@
 ---
 @charset "utf-8";
 
+$main-fonts: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+$heading-fonts: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$code-fonts: "Source Code Pro", Menlo, Monaco, Consolas, "DejaVu Sans Mono", monospace;
+
 @import "main";
