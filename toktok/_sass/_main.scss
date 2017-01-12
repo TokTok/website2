@@ -1,3 +1,57 @@
+/**
+ * Copyright 2013-2014 The Rust Project Developers. See the COPYRIGHT
+ * file at the top-level directory of this distribution and at
+ * http://rust-lang.org/COPYRIGHT.
+ * With elements taken from Bootstrap v3.0.2 (MIT licensed).
+ *
+ * Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+ * http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+ * <LICENSE-MIT or http://opensource.org/licenses/MIT>, at your
+ * option. This file may not be copied, modified, or distributed
+ * except according to those terms.
+ */
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Fira Sans'), url("../fonts/FiraSans-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Fira Sans Medium'), url("../fonts/FiraSans-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Serif Pro'), url("../fonts/SourceSerifPro-Regular.woff") format('woff');
+}
+@font-face {
+    font-family: 'Source Serif Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Heuristica Italic'), url("../fonts/Heuristica-Italic.woff") format('woff');
+}
+@font-face {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Source Serif Pro Bold'), url("../fonts/SourceSerifPro-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Code Pro'), url("../fonts/SourceCodePro-Regular.woff") format('woff');
+}
+
+*:not(body) {
+  box-sizing: border-box;
+}
+
 html {
   background-color: #eee;
 }
@@ -5,6 +59,28 @@ html {
 body {
   background-color: #fff;
   box-shadow: 0 0 3px #888;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.428571429;
+
+  -webkit-font-feature-settings: "kern", "liga";
+  font-feature-settings: "kern", "liga";
+
+  @media (min-width: 768px) {
+    max-width: 750px;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1000px;
+  }
+
+  @media (max-width: 1360px) and (min-width: 800px) {
+    margin-left: 280px;
+    margin-right: 0;
+  }
 }
 
 #content {
@@ -19,18 +95,135 @@ body {
   }
 }
 
-h1 {
-  color: #38761d;
+h1, h2, h3, h4, h5, h6, nav {
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h2.subtitle {
-  color: #666;
-  font-size: 17px;
-  border: none;
-}
-
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .nav-title {
+  // Reset paragraph counter on every header.
+  counter-reset: paragraph;
   color: black;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited,
+h4 a:link, h4 a:visited, h5 a:link, h5 a:visited {
+  color: black;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  padding: .1em 0;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+
+  .title {
+    line-height: 1.5em;
+  }
+}
+
+h2 {
+  font-size: 26px;
+  padding: .2em 0;
+  border-bottom: 1px solid #ddd;
+
+  .subtitle {
+    color: #666;
+    font-size: 17px;
+    border: none;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  padding: .2em 0;
+  border-bottom: 1px solid #DDE8FC;
+}
+
+h4, h5, h6, .nav-title {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+h4, .nav-title {
+  font-size: 22px;
+}
+
+h5, h6 {
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+}
+
+// Number paragraphs
+p > a.paragraph {
+  align: left;
+  position: absolute;
+  margin-left: -29px;
+  color: #CCC;
+}
+
+p, nav {
+  margin: 0 0 1em 0;
+}
+
+img {
+  max-width: 100%;
+
+  .emoji {
+    margin: 0 !important;
+    display: inline !important;
+  }
+}
+
+nav {
+  column-count: auto;
+  -moz-column-count: auto;
+  -webkit-column-count: auto;
+
+  ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 2em;
+
+    // Only display one level of hierarchy in the TOC
+    ul {
+      display: block;
+    }
+  }
 }
 
 #sidemenu {
@@ -63,6 +256,78 @@ h2, h3, h4, h5, h6 {
   }
 }
 
+a {
+  text-decoration: none;
+  color: #428BCA;
+  background: transparent;
+
+  &:hover, &:focus {
+    color: #2A6496;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+
+  &:hover, &:active {
+    outline: 0;
+  }
+
+  &> code {
+    color: #428bca;
+  }
+}
+
+pre, code {
+  font-family: "Source Code Pro", Menlo, Monaco, Consolas, "DejaVu Sans Mono", monospace;
+  word-wrap: break-word;
+}
+
+pre {
+  border-left: 2px solid #eee;
+  white-space: pre-wrap;
+  padding: 14px;
+  padding-right: 0;
+  margin: 20px 0;
+  font-size: 13px;
+  word-break: break-all;
+
+  @media (min-width: 1170px) {
+    font-size: 15px;
+  }
+
+  code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+  }
+}
+
+code {
+  padding: 0 2px;
+  color: #8d1a38;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1em;
+  overflow-x: auto;
+  display: block;
+
+  tr .odd {
+    background: #eee;
+  }
+
+  td, th {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+}
+
 figure {
   margin-left: 0;
 }
@@ -73,6 +338,22 @@ figure {
 
 .dt {
   color: brown;
+}
+
+ul, ol {
+  padding-left: 25px;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+  margin-bottom: 0;
+}
+
+dl {
+  margin-bottom: 20px;
+}
+
+dd {
+  margin-left: 0;
 }
 
 tr.packet-row:nth-child(odd) {
@@ -122,7 +403,43 @@ tr.packet-row:nth-child(odd) {
   }
 }
 
-img.emoji {
-  margin: 0 !important;
-  display: inline !important;
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  a, a:visited {
+    text-decoration: underline;
+  }
+  p a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  footer a[href]:after {
+    content: "";
+  }
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+  pre {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  @page {
+    margin: 2cm .5cm;
+  }
+  h1:not(.title), h2, h3 {
+    border-bottom: 0 none;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  table td, table th {
+    background-color: #fff !important;
+  }
 }
