@@ -1,6 +1,6 @@
 title: The TokTok Project
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://toktok.github.io" # the base hostname & protocol for your site
+url: "http://toktok.ltd" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
