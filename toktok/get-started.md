@@ -14,8 +14,3 @@ When in doubt, you can always [contact us](index.html#contact-us) :-)
 ## C
 
 -   [Start with C by Enlightenment](https://www.enlightenment.org/docs/c/start)
-
-## Rust
-
--   [The Rust Reference](https://doc.rust-lang.org/reference.html)
--   [Start with Rust](https://www.rust-lang.org/en-US/documentation.html)
