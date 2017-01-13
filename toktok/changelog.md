@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Changelogs
 permalink: changelog.html
 menu_index: 6

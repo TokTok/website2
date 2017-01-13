@@ -1,5 +1,4 @@
 ---
-layout: default
 title: CLA
 permalink: cla.html
 ---

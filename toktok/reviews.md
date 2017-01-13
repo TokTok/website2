@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "How to: community review"
 permalink: reviews.html
 menu_index: 11

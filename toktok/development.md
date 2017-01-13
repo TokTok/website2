@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Development process
 permalink: development.html
 menu_index: 9

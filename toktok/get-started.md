@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Get started
 permalink: get-started.html
 menu_index: 5

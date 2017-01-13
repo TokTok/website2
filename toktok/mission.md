@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Mission
 permalink: mission.html
 menu_index: 2

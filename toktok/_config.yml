@@ -8,6 +8,13 @@ markdown: kramdown
 kramdown:
   header_offset: 1
 
-# do not generate pages from templates
+# Do not generate pages from templates
 exclude:
   - "*.dist"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

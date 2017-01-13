@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Tox Core Test Framework
 permalink: design/testing.html
 ---

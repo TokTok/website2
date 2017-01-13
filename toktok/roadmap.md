@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Roadmap
 permalink: roadmap.html
 menu_index: 4

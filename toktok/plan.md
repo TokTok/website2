@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Plan
 permalink: plan.html
 menu_index: 3

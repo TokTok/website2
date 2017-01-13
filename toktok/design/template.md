@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Design Proposal Template
 permalink: design/template.html
 ---
