@@ -1,14 +1,15 @@
 ---
 layout: default
-title: Tox Quick Name Lookup Spec
+title: Tox Quick Name Lookup Specification
 authors: grayhatter
 first proposed: 2016-10-07
-last revision: 2017-01-10
-revision: 0
+last revision: 2017-01-13
+state: REVIEW
+revision: 1
 permalink: design/tqnl.html
 ---
 
-Revision 0.
+Revision {{ page.revision }}.
 
 # Goals
 
@@ -42,7 +43,7 @@ But the majority is out of the scope of this revision.
 
 ## In scope
 
-1.  Create and expose an API that clients can use for Toxcore to make and
+1.  Create and expose an API that clients can use with Toxcore to make and
     respond to string-to-ToxID queries.
 
 ## Not in scope
@@ -55,15 +56,17 @@ But the majority is out of the scope of this revision.
 
 # Technical Design
 
--   TQNL will sit on top of the DHT API, and will use DHT.c functions along
-    with the corresponding `net_crypto.c` and `crypto_core.c` to connect to
-    servers provided by the user.
+-   TQNL will use the existing DHT API, and will use DHT.h data types along
+    with the corresponding tox networking functions to connect to servers
+    provided by the user.
 -   Users will call the `tox_function()` with the server lookup information
-    (IP or hostname, Port, Public Key), and the string to be queried.
--   Servers will be specified by a Domain name, or IP address, a port, and a
+    (IP or hostname, port, public key), and the string to be queried.
+-   Servers will be specified by a domain name, or IP address, a port, and a
     public key.
 -   TQNL will connect to the server, deliver the query packet, and then store
     the server + query information in an array.
+-   The packet will consist of the nonce, and the string the client wishes to
+    search for.
 -   The query packet to the name-server will be encrypted with the DHT key,
     and the server key.
 -   The query packet to the name-server includes the DHT public key, the
@@ -75,10 +78,13 @@ as prohibit replays, or pre-generation.
 -   The server may or may not respond to the query.
 -   If the name-server does respond to a query, it’ll respond to the sending
     peer with the nonce, followed by either: a failure code, or a valid ToxID
--   The sending peer will select a timeout to resend query packets, and will
-    try to resend the same query with a new nonce after the timeout.
--   The sending peer will select a number of retries, and will send the query
-    packet that number of times plus 1 additional for the first attempt.
+-   The sending instance will select a timeout to resend query packets, and
+    will try to resend the same query with a new nonce after the timeout. The
+    timeout will be selected by evaluating network quality.
+-   The sending instance will select a number of retries, and will send a
+    query packet that number of times (plus 1 additional for the first
+    attempt.) The number of retries will be selected by evaluating network
+    quality.
 -   After receiving a valid response to its query, Toxcore will generate a
     callback to the client with either a ToxID, or an error code.
 -   At this point Toxcore will drop that pending query from its list of
