@@ -62,8 +62,8 @@ This document forms the basis for discussion, and we require at least one
 reviewer (if possible, two reviewers) to sign off on the idea. Ideally, we have
 many more people commenting and suggesting on the document.
 
-You can use our [design overview template](design/template.html) or write your
-own. If you are unsure which direction you want to go in, writing small
+You can use our [design overview template](designs/template.html) or write
+your own. If you are unsure which direction you want to go in, writing small
 prototypes is a good way of exploring the space you are designing your project
 in. A prototype typically takes about a day to implement. If you take
 significantly more time, it will turn into a full implementation. Prototypes

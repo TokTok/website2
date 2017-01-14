@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tox Core Test Framework
-permalink: design/testing.html
+permalink: designs/testing.html
 ---
 
 Language independent fuzzing and unit testing for Tox implementations

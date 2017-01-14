@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Design Proposal Template
-permalink: design/template.html
+permalink: designs/template.html
 ---
 
 One sentence explaining what the proposal is about.
