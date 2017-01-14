@@ -15,9 +15,7 @@ how to engage in a community review.
 # Step 1: Look over the PR list
 
 Take a look at the [pulls](pulls.html) page on this website. It lists all the
-repositories that currently have open pull requests. The first column (marked
-with "#") is the PR number. Clicking on a PR number brings you into the
-Reviewable UI. The branch name links to the GitHub pull request itself.
+repositories that currently have open pull requests.
 
 You can start by reading through the PR titles and see if anything catches
 your interest. You can also just randomly click on some PR numbers and enter
