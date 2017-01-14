@@ -23,7 +23,7 @@ different times.
 -   Complete [Tox protocol specification](https://github.com/TokTok/spec).
 -   Write a Haskell [model
     implementation](https://github.com/TokTok/hs-toxcore) of the Tox protocol
-    and [tests](design/testing.html) for other implementations.
+    and [tests](designs/testing.html) for other implementations.
 -   Write a Rust [implementation](https://github.com/zetok/tox) of the Tox
     protocol.
 
