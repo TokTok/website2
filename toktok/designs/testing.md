@@ -8,20 +8,19 @@ Language independent fuzzing and unit testing for Tox implementations
 # Objective
 
 The goal of this project is to create a language-neutral test framework to
-validate any [Tox Core Protocol](https://toktok.github.io/spec)
-implementation, including the C reference implementation
-[libtoxcore](https://github.com/toktok/c-toxcore).  We aim to create an
-exhaustive test suite using this framework to ensure compatibility and
-correctness of all protocol implementations. The test suite aims to provide
-validation, not verification, meaning we do not aim to prove any properties of
-the specification or implementations. We aim to supplement the
-implementation-specific test suite, not to replace it. Unit tests inside the
-implementation test suite are still important. The framework and test suite
-implemented here enables some form of test-driven development. We target the
-functional subset of implementations and do not test I/O, so integration tests
-validating the networking part of a protocol implementation will remain vital
-to its confidence in correctness. A secondary goal is to improve the protocol
-specification with findings from its model implementation.
+validate any [Tox Core Protocol](../spec.html) implementation, including the C
+reference implementation [libtoxcore](https://github.com/toktok/c-toxcore).
+We aim to create an exhaustive test suite using this framework to ensure
+compatibility and correctness of all protocol implementations. The test suite
+aims to provide validation, not verification, meaning we do not aim to prove
+any properties of the specification or implementations. We aim to supplement
+the implementation-specific test suite, not to replace it. Unit tests inside
+the implementation test suite are still important. The framework and test
+suite implemented here enables some form of test-driven development. We target
+the functional subset of implementations and do not test I/O, so integration
+tests validating the networking part of a protocol implementation will remain
+vital to its confidence in correctness. A secondary goal is to improve the
+protocol specification with findings from its model implementation.
 
 # Background
 

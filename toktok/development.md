@@ -103,7 +103,7 @@ caused by unavoidable weaknesses in the type system.
 # Requirements
 
 -   Code review
-    -   [Reviewable](https://reviewable.io) for code reviews.
+    -   [Reviewable](https://reviewable.io/reviews) for code reviews.
     -   Every PR is required to go through review, no commits can be made
         directly to the master branch without review (Github branch
         protection).
