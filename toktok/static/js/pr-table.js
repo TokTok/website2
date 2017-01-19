@@ -1,6 +1,5 @@
 // Function depends on twemoji already having been loaded.
-function createPrTable() {
-  var repoSection = document.querySelector('main');
+function reloadPrTable() {
   var requestHeaders = new Headers();
   var requestInit = { method: 'GET',
                       headers: requestHeaders,
@@ -17,14 +16,14 @@ function createPrTable() {
   fetch('https://git-critique.herokuapp.com/hello/pulls', requestInit)
   .then(function(response) { return response.json(); })
   .then(function(json) {
-    var loadingDiv = repoSection.querySelector(".loading");
-    loadingDiv.parentNode.removeChild(loadingDiv);
+    var newRepoSection = document.createElement('div');
+    newRepoSection.className = "tables-wrapper"
 
     for (var i = 0; i < json.length; i++) {
       if (json[i].length > 0) {
         var repoTitle = document.createElement('h2');
         repoTitle.innerHTML = json[i][0].prRepoName;
-        repoSection.appendChild(repoTitle);
+        newRepoSection.appendChild(repoTitle);
 
         var prTable = document.createElement('table');
         prTable.className = "pr-table"
@@ -61,18 +60,21 @@ function createPrTable() {
             "<td>" + json[i][j].prReviewers.join(", ") + "</td>";
           prTable.appendChild(listItem);
         }
-        repoSection.appendChild(prTable);
+        newRepoSection.appendChild(prTable);
 
         // parse emoji in the content to ensure it gets displayed correctly in all browsers
-        twemoji.size = '16x16'; // This can be set to 16x16, 36x36, or 72x72
-        twemoji.parse(prTable, {
-            callback: function(icon, options) {
-              return relative + 'static/img/emoij/' + options.size + '/' + icon + '.png';
-            }
-        });
+        // twemoji.size = '16x16'; // This can be set to 16x16, 36x36, or 72x72
+        // twemoji.parse(prTable, {
+        //     callback: function(icon, options) {
+        //       return relative + 'static/img/emoij/' + options.size + '/' + icon + '.png';
+        //     }
+        // });
       }
     }
+    var repoSection = document.querySelector('.tables-wrapper');
+    repoSection.replaceWith(newRepoSection);
+    console.log("PR table reloaded.");
   });
 }
 
-createPrTable();
+reloadPrTable();

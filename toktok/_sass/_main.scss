@@ -323,6 +323,37 @@ tr.packet-row:nth-child(odd) {
   background: #eee;
 }
 
+@mixin circleShadow($height) {
+  box-shadow: 0 0 $height rgba(0, 0, 0, .15),
+              0 $height $height*2 rgba(0, 0, 0, .30)
+}
+
+.pr-reload {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 50px;
+
+  @include circleShadow(4px);
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 7px;
+
+  &:hover {
+    @include circleShadow(8px);
+  }
+
+  a {
+    font-size: 26px;
+    margin-left: 7px;
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .pr-table {
   width: 100%;
 
@@ -340,6 +371,11 @@ tr.packet-row:nth-child(odd) {
     &:nth-child(4) { width: 4em; text-align: center; }
     &:nth-child(5) { width: 10em; }
   }
+}
+
+.pr-padding {
+  // Because otherwise the actionbutton will cover up part of the table.
+  height: 3em;
 }
 
 .tooltip {
