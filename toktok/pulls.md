@@ -5,7 +5,6 @@ menu_index: 7
 js-includes: [twemoji-2.2.3.min.js, pr-table.js]
 ---
 
-
 Click on a PR number (the # column) to see the pull request on GitHub. Click
 on the branch to enter Reviewable.io and do a code review.
 
@@ -25,12 +24,10 @@ on the branch to enter Reviewable.io and do a code review.
 <div></div>
 {: .pr-padding}
 
-
 <div>
   <a href="javascript:reloadPrTable()">&#8634;</a>
 </div>
 {: .pr-reload}
-
 
 {% comment %}
   parse_block_html="true" tells kramdown to parse the content of html blocks
