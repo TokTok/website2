@@ -74,8 +74,8 @@ function reloadPrTable() {
     }
     var repoSection = document.querySelector('.tables-wrapper');
     repoSection.replaceWith(newRepoSection);
-    end = new Date();
-    deltaTime = end.getTime() - start.getTime();
+    var end = new Date();
+    var deltaTime = end.getTime() - start.getTime();
     console.log("PR table took %s seconds to load.", (deltaTime)/1000.0);
   });
 }
