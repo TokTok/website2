@@ -1,5 +1,6 @@
 // Function depends on twemoji already having been loaded.
 function reloadPrTable() {
+  var start = new Date();
   var requestHeaders = new Headers();
   var requestInit = { method: 'GET',
                       headers: requestHeaders,
@@ -63,17 +64,19 @@ function reloadPrTable() {
         newRepoSection.appendChild(prTable);
 
         // parse emoji in the content to ensure it gets displayed correctly in all browsers
-        // twemoji.size = '16x16'; // This can be set to 16x16, 36x36, or 72x72
-        // twemoji.parse(prTable, {
-        //     callback: function(icon, options) {
-        //       return relative + 'static/img/emoij/' + options.size + '/' + icon + '.png';
-        //     }
-        // });
+        twemoji.size = '16x16'; // This can be set to 16x16, 36x36, or 72x72
+        twemoji.parse(prTable, {
+            callback: function(icon, options) {
+              return relative + 'static/img/emoij/' + options.size + '/' + icon + '.png';
+            }
+        });
       }
     }
     var repoSection = document.querySelector('.tables-wrapper');
     repoSection.replaceWith(newRepoSection);
-    console.log("PR table reloaded.");
+    end = new Date();
+    deltaTime = end.getTime() - start.getTime();
+    console.log("PR table took %s seconds to load.", (deltaTime)/1000.0);
   });
 }
 
