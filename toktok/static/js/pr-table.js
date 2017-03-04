@@ -1,3 +1,29 @@
+// Polyfill for replaceWith for IE, Firefox < v49, and Safari
+// from: https://github.com/jserz/js_piece/blob/master/DOM/ChildNode/replaceWith()/replaceWith().md
+(function (arr) {
+  arr.forEach(function (item) {
+    if (item.hasOwnProperty('replaceWith')) {
+      return;
+    }
+    Object.defineProperty(item, 'replaceWith', {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: function replaceWith() {
+        var argArr = Array.prototype.slice.call(arguments),
+          docFrag = document.createDocumentFragment();
+
+        argArr.forEach(function (argItem) {
+          var isNode = argItem instanceof Node;
+          docFrag.appendChild(isNode ? argItem : document.createTextNode(String(argItem)));
+        });
+
+        this.parentNode.replaceChild(docFrag, this);
+      }
+    });
+  });
+})([Element.prototype, CharacterData.prototype, DocumentType.prototype]);
+
 // Function depends on twemoji already having been loaded.
 function reloadPrTable() {
   var start = new Date();
