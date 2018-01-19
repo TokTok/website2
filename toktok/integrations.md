@@ -1,6 +1,7 @@
 ---
 title: Integrations
 permalink: integrations.html
+menu_index: 13
 ---
 
 We don't have paying customers, but here is a list of projects that use some
