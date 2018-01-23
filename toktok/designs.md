@@ -12,10 +12,15 @@ design proposals is Markdown. You can use the [template Markdown
 file](https://raw.githubusercontent.com/TokTok/website/master/toktok/designs/template.md)
 as a basis for your proposal document.
 
--   [Design Proposal Template](designs/template.html)
--   [Original TokTok project plan](designs/plan.html)
--   [Tox Core Test Framework](designs/testing.html)
--   [Tox Quick Name Lookup](designs/tqnl.html)
+Note that the designs here are the original design documents, not necessarily
+reflecting the actual current implementation. See the specification for the
+current implementation details for toxcore.
+
+-   2016-01-15 - [Original TokTok project plan](designs/plan.html)
+-   2016-02-28 - [Design Proposal Template](designs/template.html)
+-   2016-02-28 - [Tox Core Test Framework](designs/testing.html)
+-   2016-10-07 - [Tox Quick Name Lookup](designs/tqnl.html)
+-   2018-01-22 - [Mocking the Operating System](designs/osmock.html)
 
 Older designs not yet in Markdown format:
 
