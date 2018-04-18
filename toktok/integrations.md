@@ -18,6 +18,8 @@ yourself to this page.
 *   [fToxTun](https://github.com/ddorian1/fToxTun)
 *   [Isotoxin](https://github.com/isotoxin/isotoxin)
 *   [Konv](https://github.com/SkyzohKey/Konv)
+*   [minitox](https://github.com/hqwrong/minitox)
+    (A minimal client)
 *   [MirandaNG](https://github.com/miranda-ng/miranda-ng)
 *   [Osmosis.jl](https://github.com/SimonDanisch/Osmosis.jl)
     (Chat client for Julia )
