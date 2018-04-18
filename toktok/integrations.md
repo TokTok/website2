@@ -30,6 +30,8 @@ yourself to this page.
 *   [Toxy](https://github.com/alexbakker/Toxy)
 *   [Toxzilla](https://github.com/toxzilla/app)
 *   [uTox](https://github.com/uTox/uTox)
+*   [minitox](https://github.com/hqwrong/minitox)
+    (A minimal client)
 
 # Mobile clients
 
