@@ -38,6 +38,7 @@ yourself to this page.
 
 *   [Antidote](https://github.com/Antidote-for-Tox/Antidote) (iOS)
 *   [Antox](https://github.com/Antox/Antox) (Android)
+*   [jTox](https://github.com/almindor/harbour-jTox) (SailfishOS)
 *   [Cyanide](https://github.com/krobelus/cyanide) (SailfishOS)
 *   [Harbour-tox](https://github.com/emmanuelduv/harbour-tox) (Sailfish on Jolla)
 *   [ToxDroid](https://github.com/suzp1984/ToxDroid) (Android)
