@@ -3,8 +3,8 @@ title: Home
 permalink: index.html
 ---
 
-We are a **focused** effort to bring high quality privacy enhancing software
-to everybody.
+We are a focused effort to bring high quality privacy enhancing software to
+everybody.
 
 ![TokTok Android client](static/img/toktok/chat-small.png)
 

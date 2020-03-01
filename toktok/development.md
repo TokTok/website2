@@ -109,7 +109,7 @@ caused by unavoidable weaknesses in the type system.
     -   No branches other than master on the main repositories; contributors
         work on their own forks.
 -   Testing
-    -   [Travis](https://travis-ci.org) for continuous integration.
+    -   [Travis](https://travis-ci.com) for continuous integration.
     -   [Coveralls](https://coveralls.io) for test coverage recording.
     -   Github branch protection requires CI tests to pass and coverage to not
         decrease before merge.
