@@ -1,3 +1,5 @@
 /hs-toxcore
 /toktok-site
 _site
+*-e
+*.swp

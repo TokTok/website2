@@ -1,10 +1,8 @@
-/Gemfile.lock
-/_site
-/.sass-cache
-/.jekyll-metadata
-
-# auto generated files
-/changelog/c-toxcore.md
-/roadmap/c-toxcore.md
-/spec.md
-/res
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+.cache/
+# Build directory
+public/
+.DS_Store
+yarn-error.log
