@@ -1,3 +1,4 @@
 [build]
-command = "gem install jekyll guard-livereload && make hs-toxcore && make toktok-site"
-publish = "toktok-site"
+base = "toktok/"
+command = "gatsby build"
+publish = "toktok/public/"
