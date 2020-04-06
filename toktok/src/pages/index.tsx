@@ -2,9 +2,9 @@ import * as React from "react";
 import Link from "gatsby-link";
 import Layout from "../components/layout.tsx";
 
-import About from "../components/about.tsx";
+import About from "../components/content/about.tsx";
 
-const IndexPage = () => (
+const Page = () => (
   <Layout>
     <section id="home" className="cd-hero js-cd-hero">
       <ul className="cd-hero__slider">
@@ -43,8 +43,8 @@ const IndexPage = () => (
       </ul>
     </section>
 
-    {About()}
+    <About />
   </Layout>
 );
 
-export default IndexPage;
+export default Page;

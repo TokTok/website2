@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout.tsx";
 
-const ClientsPage = () => (
+const Page = () => (
   <Layout>
     <div id="clients" className="section wb">
       <div className="container">
@@ -65,4 +65,4 @@ const ClientsPage = () => (
   </Layout>
 );
 
-export default ClientsPage;
+export default Page;

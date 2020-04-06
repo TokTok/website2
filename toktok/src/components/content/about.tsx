@@ -1,7 +1,6 @@
 import * as React from "react";
-import Link from "gatsby-link";
 
-const About = () => (
+const Component = () => (
   <div id="about" className="section wb">
     <div className="container">
       <div className="row">
@@ -68,4 +67,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default Component;
