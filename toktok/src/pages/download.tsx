@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout.tsx";
 
-const DownloadPage = () => (
+const Page = () => (
   <Layout>
     <div id="download" className="section noover download-bg">
       <div className="container">
@@ -55,4 +55,4 @@ const DownloadPage = () => (
   </Layout>
 );
 
-export default DownloadPage;
+export default Page;

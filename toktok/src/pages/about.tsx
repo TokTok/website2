@@ -1,12 +1,12 @@
 import * as React from "react";
 import Link from "gatsby-link";
 import Layout from "../components/layout.tsx";
-import About from "../components/about.tsx";
+import About from "../components/content/about.tsx";
 
-const AboutPage = () => (
+const Page = () => (
   <Layout>
-    <About></About>
+    <About />
   </Layout>
 );
 
-export default AboutPage;
+export default Page;

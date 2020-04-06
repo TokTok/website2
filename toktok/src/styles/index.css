@@ -29,13 +29,21 @@ body {
 
 a {
   color: #1f1f1f;
-  text-decoration: none !important;
-  outline: none !important;
+  text-decoration: none;
+  outline: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.section a {
+  color: #4f4fcf;
+}
+
+.section a:hover {
+  color: #0056b3;
 }
 
 h1,
@@ -87,12 +95,6 @@ h6 a {
   color: #212121;
   text-decoration: none !important;
   opacity: 1;
-}
-
-a {
-  color: #1f1f1f;
-  text-decoration: none;
-  outline: none;
 }
 
 a,
@@ -650,6 +652,7 @@ body.app_version .header_style_01.fixed-menu {
   transition: all 0.4s ease-in-out;
 }
 .ser-icon i {
+  padding-top: 20px;
   font-size: 50px;
   color: #ffffff;
 }
@@ -893,6 +896,15 @@ body.app_version .header_style_01.fixed-menu {
   background-color: #e65100;
 }
 
+#faqs .section-title h3,
+#faqs .section-title p {
+  color: #ffffff;
+}
+
+#faqs .section-title a {
+  color: #1111ff;
+}
+
 .accordion:before {
   content: "";
   width: 1px;
@@ -978,6 +990,10 @@ body.app_version .header_style_01.fixed-menu {
   font-size: 14px;
   color: #333333;
   line-height: 28px;
+}
+
+.accordion .card-body li {
+  list-style-type: circle;
 }
 
 /*------------------------------------------------------------------

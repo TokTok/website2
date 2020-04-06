@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout.tsx";
 
-const PricingPage = () => (
+const Page = () => (
   <Layout>
     <div id="pricing" className="section lb">
       <div className="container">
@@ -80,4 +80,4 @@ const PricingPage = () => (
   </Layout>
 );
 
-export default PricingPage;
+export default Page;
