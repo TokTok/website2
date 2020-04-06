@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout.tsx";
+import Link from "gatsby-link";
 
 const Page = () => (
   <Layout>
@@ -8,19 +9,17 @@ const Page = () => (
         <div className="row align-items-center text-center">
           <div className="col-md-6 col-sm-12">
             <div className="customwidget text-left">
-              <h1>Download Start</h1>
+              <h1>Thanks for downloading!</h1>
               <p>
-                {" "}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id
-                felis rhoncus, ultrices dolor quis, faucibus velit. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus.
+                After you've installed,{" "}
+                <a href="#social">invite some friends</a> to join you on Tox!
               </p>
             </div>
           </div>
           <div className="col-md-6 iphones">
             <div className="text-center image-center">
               <img
-                src="https://tox.chat/theme/img/plat/mac.svg"
+                src="/uploads/iphones.png"
                 alt=""
                 className="img-fluid wow fadeInUp"
               />
@@ -32,24 +31,101 @@ const Page = () => (
 
     <div className="download-icons">
       <div className="box-icon">
-        <div className="btn-buy apple-button">
-          <a href="#">
-            <i className="flaticon-android"></i> Download on{" "}
-            <strong>Google Play</strong>
+        <div className="btn-buy">
+          <Link to="/download/android/">
+            <i className="fa fa-android"></i> Download for{" "}
+            <strong>Android</strong>
+          </Link>
+        </div>
+        <div className="btn-buy">
+          <a href="https://github.com/qTox/qTox-nightly-releases/releases/download/ci-master-latest/qTox.dmg">
+            <i className="fa fa-apple"></i> Download for{" "}
+            <strong>Mac OS X</strong>
           </a>
         </div>
-        <div className="btn-buy apple-button">
-          <a href="#">
-            <i className="flaticon-apple"></i> Download on the{" "}
-            <strong>App Store</strong>
+        <div className="btn-buy">
+          <a href="https://github.com/qTox/qTox-nightly-releases/releases/download/ci-master-latest/setup-qtox-x86_64-release.exe">
+            <i className="fa fa-windows"></i> Download for{" "}
+            <strong>Windows</strong>
           </a>
         </div>
-        <div className="btn-buy apple-button">
-          <a href="#">
-            <i className="flaticon-windows"></i> Download on the{" "}
-            <strong>Windows Store</strong>
+        <div className="btn-buy">
+          <a href="https://flathub.org/apps/details/io.github.qtox.qTox">
+            <i className="fa fa-linux"></i> Download for <strong>Linux</strong>
           </a>
         </div>
+      </div>
+    </div>
+
+    <div id="social" class="modalDialog button">
+      <div>
+        <a href="#close" class="close-overlay"></a>
+        <a href="#close" title="Close" class="close">
+          <span class="fa fa-close">&nbsp;</span>
+        </a>
+
+        <h2>Share the Love</h2>
+
+        <p>This is where you tell your friends how awesome Tox is.</p>
+        <p>(These are all manual sharing links, no creepy tracking widgets.)</p>
+        <section class="tabsection">
+          <input id="tab-20" name="shareOpt" type="radio" />
+          <label for="tab-20" class="tablabel">
+            <span class="icon-dramabird"></span>
+          </label>
+          <div class="tabdiv">
+            <p>Tweet your friends:</p>
+            <p class="socialquote">
+              Tired of worrying if someone's reading your conversations? Ditch
+              Skype and other unsafe chat programs for #tox!{" "}
+            </p>
+            <a
+              href="http://twitter.com/home?status=Tired%20of%20worrying%20if%20someone%27s%20reading%20your%20conversations?%20Ditch%20Skype%20and%20other%20unsafe%20chat%20programs%20for%20%23Tox!%20https://tox.chat/"
+              target="_blank"
+              class="socialbutton tweet"
+            >
+              <span class="fa fa-twitter">&nbsp;</span>Tweet
+            </a>
+          </div>
+          <input id="tab-30" name="shareOpt" type="radio" />
+          <label for="tab-30" class="tablabel">
+            <span class="icon-minionbook"></span>
+          </label>
+          <div class="tabdiv">
+            <p>Post on Facebook:</p>
+            <p class="socialquote">
+              Whether it's corporations or governments, there's just too much
+              digital spying going on today. Tox is easy-to-use software that
+              connects you with friends and family without anyone else listening
+              in. While other big-name services require you to pay for features,
+              Tox is totally free and comes without advertising — forever.
+            </p>
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=tox.chat"
+              target="_blank"
+              class="socialbutton facebook"
+            >
+              <span class="fa fa-facebook">&nbsp;&nbsp;</span>Share
+            </a>
+          </div>
+          <input id="tab-40" name="shareOpt" type="radio" />
+          <label for="tab-40" class="tablabel">
+            <span class="icon-diaspora"></span>
+          </label>
+          <div class="tabdiv">
+            <p>Share on Diaspora:</p>
+            <p class="socialquote">
+              Join me on Tox, a distributed, encrypted, multimedia messenger!
+            </p>
+            <a
+              href="http://sharetodiaspora.github.io/?title=Join me on Tox, a distributed, encrypted, multimedia messenger!&url=http://tox.chat"
+              target="_blank"
+              class="socialbutton diaspora"
+            >
+              <span class="fa">d*&nbsp;</span>Post
+            </a>
+          </div>
+        </section>
       </div>
     </div>
   </Layout>
