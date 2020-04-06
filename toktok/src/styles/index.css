@@ -15,6 +15,7 @@
 @import url(css/animate.css);
 @import url(css/flaticon.css);
 @import url(css/hero-slider.css);
+@import url(css/modals.css);
 
 /*------------------------------------------------------------------
     SKELETON
@@ -1184,6 +1185,10 @@ body.app_version .header_style_01.fixed-menu {
   position: absolute;
 }
 
+.download-bg a {
+  color: #ffff00;
+}
+
 /*------------------------------------------------------------------
     FEATURES
 -------------------------------------------------------------------*/
@@ -1346,6 +1351,7 @@ body.app_version .customwidget li i {
 }
 
 .download-icons {
+  background: #333333;
   position: relative;
   display: block;
   width: 100%;
@@ -1380,7 +1386,6 @@ body.app_version .customwidget li i {
 .btn-buy a i {
   display: block;
   font-size: 32px;
-  font-weight: 700;
 }
 .btn-buy a strong {
   display: block;

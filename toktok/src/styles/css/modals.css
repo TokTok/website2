@@ -1,0 +1,227 @@
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 90%;
+  max-width: 900px;
+  max-height: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  padding: 5px 20px 13px 20px;
+  background: #fff;
+  border-radius: 3px;
+  overflow-y: auto;
+}
+
+.close {
+  color: #000;
+  line-height: 25px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.close-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  z-index: -1;
+}
+
+section.tabsection {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+label.tablabel {
+  background-color: #ddd;
+  padding: 3em 3em;
+  cursor: pointer;
+  z-index: 1;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: 0.2s ease-out;
+}
+
+label.tablabel:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+label.tablabel > .text {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+}
+
+div.tabdiv {
+  width: 100%;
+  padding: 1em;
+  -webkit-order: 1;
+  order: 1;
+  margin-top: 5px;
+}
+input[type="radio"],
+div.tabdiv {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  color: #fff;
+  background-color: #414141;
+  opacity: 1;
+  cursor: default;
+}
+
+input[type="radio"]:checked + label.tablabel + div {
+  display: block;
+}
+
+.socialbutton {
+  font-weight: 400;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px 1em;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 2.3em;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0.1em 0px rgba(255, 255, 255, 0.1) inset,
+    0px -0.15em 0px rgba(0, 0, 0, 0.2) inset,
+    0px 0.15em 0px rgba(0, 0, 0, 0.075);
+  transition: 0.4s;
+  float: left;
+}
+
+.socialbutton:active {
+  box-shadow: 0px 0.1em 0px rgba(255, 255, 255, 0.1) inset,
+    0px -0.1em 0px rgba(0, 0, 0, 0.2) inset, 0px 0.15em 0px rgba(0, 0, 0, 0.075);
+}
+
+.socialbutton.tweet {
+  background: #00b0ed;
+  color: #fff;
+}
+
+.socialbutton.facebook {
+  background: #3a5795;
+  color: #fff;
+}
+
+.socialbutton.diaspora {
+  background: #414141;
+  color: #fff;
+}
+
+.socialquote {
+  position: relative;
+  background: #ddd;
+  border: 2px solid #ddd;
+  padding: 5px;
+  border-radius: 3px;
+  font-style: italic;
+  margin-bottom: 15px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.socialquote:after,
+.socialquote:before {
+  top: 100%;
+  left: 31px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.socialquote:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ddd;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.socialquote:before {
+  border-color: rgba(221, 221, 221, 0);
+  border-top-color: #ddd;
+  border-width: 13px;
+  margin-left: -13px;
+}
+
+/* Leaving in support for IE8 and older here since it wouldn't degrade gracefully */
+@font-face {
+  font-family: "Glyphter";
+  src: url("../fonts/Glyphter.eot");
+  src: url("../fonts/Glyphter.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Glyphter.woff") format("woff"),
+    url("../fonts/Glyphter.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="icon-"]:before {
+  display: inline-block;
+  font-family: "Glyphter";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 98px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-diaspora:before {
+  content: "\0044";
+}
+.icon-minionbook:before {
+  content: "\0045";
+}
+.icon-dramabird:before {
+  content: "\0046";
+}

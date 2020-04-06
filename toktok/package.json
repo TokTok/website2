@@ -6,6 +6,7 @@
     "@types/node": "^13.11.0",
     "@types/react": "^16.9.32",
     "@types/react-dom": "^16.9.6",
+    "bootstrap": "^4.4.1",
     "gatsby": "^2.20.12",
     "gatsby-link": "^2.3.2",
     "gatsby-plugin-react-helmet": "^3.2.1",

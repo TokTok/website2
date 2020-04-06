@@ -1,27 +1,27 @@
 import * as React from "react";
 
-const Component: React.FC = ({ children }) => (
+const Component: React.FC = ({ id, title, children }) => (
   <div className="card">
-    <div className="card-header" id="headingOne">
+    <div className="card-header" id={id}>
       <h5 className="mb-0">
         <a
           href=""
           className="btn-link"
           type="button"
           data-toggle="collapse"
-          data-target="#collapseOne"
+          data-target={"#collapse-" + id}
           aria-expanded="true"
           aria-controls="collapseOne"
         >
-          How does Tox protect my privacy?
+          {title}
         </a>
       </h5>
     </div>
 
     <div
-      id="collapseOne"
+      id={"collapse-" + id}
       className="collapse show"
-      aria-labelledby="headingOne"
+      aria-labelledby={id}
       data-parent="#accordionExample"
     >
       <div className="card-body">{children}</div>
