@@ -1,14 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: "Tox - Safe as a whisper",
-    author: {
-      name: "Kyle Mathews",
-      summary: "who lives and works in San Francisco building useful things.",
-    },
-    description: "A starter blog demonstrating what Gatsby can do.",
-    siteUrl: "https://gatsby-starter-blog-demo.netlify.com/",
+    authors: [{
+      name: "nurupo",
+      summary: "some dude who writes blog posts.",
+    }],
+    description:
+      "Whether it's corporations or governments, there's just too much digital " +
+      "spying going on today. Tox is an easy to use application that connects " +
+      "you with friends and family without anyone else listening in. While other " +
+      "big-name services require you to pay for features, Tox is totally free and " +
+      "comes without advertising &mdash; forever.",
+    keywords: "tox, security, messaging, messenger, videochat, chat",
     social: {
-      twitter: "kylemathews",
+      twitter: "projecttox",
     },
   },
   plugins: [
@@ -20,13 +25,6 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: "blog",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: "assets",
       },
     },
     {
@@ -52,6 +50,7 @@ module.exports = {
       },
     },
     "gatsby-transformer-sharp",
+    "gatsby-plugin-catch-links",
     "gatsby-plugin-sharp",
     "gatsby-plugin-feed",
   ],

@@ -7,7 +7,7 @@ status: published
 ---
 
 We advise everyone using the fully static Toxic builds that are listed
-on our [download page](https://tox.chat/download.html) to update them to
+on our [download page](/download/) to update them to
 the newest version by re-downloading them from that page. Those Toxic
 builds use musl-libc and there was a fairly serious bug discovered in
 musl-libc

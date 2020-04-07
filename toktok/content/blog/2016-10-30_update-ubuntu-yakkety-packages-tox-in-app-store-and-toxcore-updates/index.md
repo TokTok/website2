@@ -49,7 +49,7 @@ get qTox packages from the [openSUSE Build Service package
 repository](https://software.opensuse.org/download.html?project=home%3Aantonbatenev%3Atox&package=qtox),
 which [qTox developers advertise as the recommended place to get qTox
 packages](https://github.com/qTox/qTox/blob/master/README.md#qtox), and
-which is linked on the [Download page](https://tox.chat/download.html)
+which is linked on the [Download page](/download/)
 of our website.
 
 iOS

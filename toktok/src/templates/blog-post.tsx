@@ -34,7 +34,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <section dangerouslySetInnerHTML={{ __html: post.html }} />
             <hr />
             <footer>
-              <Bio />
+              <Bio name={post.frontmatter.author} />
             </footer>
           </article>
 
@@ -77,6 +77,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        author
         date(formatString: "MMMM DD, YYYY")
         description
       }

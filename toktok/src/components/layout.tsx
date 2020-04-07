@@ -12,21 +12,6 @@ const DefaultLayout: React.FC = ({ children }) => (
   <div>
     <Helmet
       title="Tox - Safe as a whisper"
-      meta={[
-        {
-          name: "description",
-          content:
-            "Whether it's corporations or governments, there's just too much digital " +
-            "spying going on today. Tox is an easy to use application that connects " +
-            "you with friends and family without anyone else listening in. While other " +
-            "big-name services require you to pay for features, Tox is totally free and " +
-            "comes without advertising &mdash; forever.",
-        },
-        {
-          name: "keywords",
-          content: "tox, security, messaging, messenger, videochat, chat",
-        },
-      ]}
       link={[
         {
           rel: "shortcut icon",
