@@ -209,7 +209,7 @@ Hero Slider - by CodyHouse.co
   height: 30%;
 }
 
-@media only screen and (min-width: 1170px) and (min-height: 780px) {
+@media only screen and (min-width: 1170px) and (min-height: 580px) {
   .cd-hero__content--img:nth-of-type(1) img {
     display: block;
   }
