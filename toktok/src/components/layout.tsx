@@ -4,7 +4,8 @@ import NavBar from "./nav/bar.tsx";
 import NavLink from "./nav/link.tsx";
 import Helmet from "react-helmet";
 
-import "bootstrap";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 import "../styles/index.css";
 
@@ -24,16 +25,31 @@ const DefaultLayout: React.FC = ({ children }) => (
         },
       ]}
     />
+
     <header className="header header_style_01 fixed-menu">
-      <NavBar>
-        <NavLink to="/download/" icon="download" title="Download" />
-        <NavLink to="/features/" icon="list-ul" title="Features" />
-        <NavLink to="/about/" icon="align-left" title="About Us" />
-        <NavLink to="/blog/" icon="rss" title="Blog" />
-        <NavLink to="/clients/" icon="lock" title="Clients" />
-        <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
-        <NavLink to="/contact/" icon="envelope" title="Contact" />
-      </NavBar>
+      <div className="container">
+      <Navbar collapseOnSelect expand="lg">
+        <Navbar.Brand href="/">
+          <img
+            src="/images/logos/logo.svg"
+            alt="image"
+            style={{ height: "49px" }}
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+          <Nav>
+            <NavLink to="/download/" icon="download" title="Download" />
+            <NavLink to="/features/" icon="list-ul" title="Features" />
+            <NavLink to="/about/" icon="align-left" title="About Us" />
+            <NavLink to="/blog/" icon="rss" title="Blog" />
+            <NavLink to="/clients/" icon="lock" title="Clients" />
+            <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
+            <NavLink to="/contact/" icon="envelope" title="Contact" />
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      </div>
     </header>
 
     {children}
