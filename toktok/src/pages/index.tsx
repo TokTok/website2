@@ -18,14 +18,14 @@ const Page = () => (
             </p>
             <Link to="/download/" className="hvr-bounce-to-right cd-hero__btn">
               <i className="fa fa-laptop"></i>
-              Download
+              Get qTox
             </Link>
             <Link
               to="/download/android/"
               className="hvr-bounce-to-right cd-hero__btn cd-hero__btn--secondary"
             >
               <i className="fa fa-android"></i>
-              Android App
+              Get the App
             </Link>
 
             <div className="cd-hero__content--img">
