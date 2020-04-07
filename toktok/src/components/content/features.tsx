@@ -4,7 +4,7 @@ const Component = () => (
   <div id="features" className="section lb">
     <div className="container">
       <div className="section-title text-center">
-        <h3>The App Features</h3>
+        <h3>Tox Features</h3>
         <p className="lead">
           Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean
           sollicitudin, lorem quis bibendum
