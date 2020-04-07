@@ -1,11 +1,11 @@
 import * as React from "react";
-import NavLink from "./navlink.tsx";
+import NavLink from "../navlink.tsx";
 import Helmet from "react-helmet";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import "../styles/index.css";
+import "../../styles/index.css";
 
 const DefaultLayout: React.FC = ({ children }) => (
   <div>
@@ -45,12 +45,10 @@ const DefaultLayout: React.FC = ({ children }) => (
           >
             <Nav>
               <NavLink to="/download/" icon="download" title="Download" />
-              <NavLink to="/features/" icon="list-ul" title="Features" />
               <NavLink to="/about/" icon="align-left" title="About" />
+              <NavLink to="/contributing/" icon="sign-language" title="Contributing" />
               <NavLink to="/blog/" icon="rss" title="Blog" />
-              <NavLink to="/clients/" icon="lock" title="Clients" />
               <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
-              <NavLink to="/contact/" icon="envelope" title="Contact" />
             </Nav>
           </Navbar.Collapse>
         </Navbar>

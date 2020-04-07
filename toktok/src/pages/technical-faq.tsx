@@ -1,6 +1,6 @@
 import * as React from "react";
 import Card from "../components/accordion/card.tsx";
-import Layout from "../components/layout.tsx";
+import Layout from "../components/layout/main.tsx";
 import Link from "gatsby-link";
 
 const Page = () => (
