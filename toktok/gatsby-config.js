@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Tox - Safe as a whisper",
+    siteUrl: "https://toktok.ltd/",
     authors: [{
       name: "nurupo",
       summary: "some dude who writes blog posts.",
