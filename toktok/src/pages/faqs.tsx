@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../components/layout.tsx";
+import Layout from "../components/layout/main.tsx";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 import Card from "../components/accordion/card.tsx";
