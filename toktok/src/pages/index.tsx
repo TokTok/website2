@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import Layout from "../components/layout.tsx";
 
 import About from "../components/content/about.tsx";
+import Features from "../components/content/features.tsx";
 
 const Page = () => (
   <Layout>
@@ -44,6 +45,7 @@ const Page = () => (
     </section>
 
     <About />
+    <Features />
   </Layout>
 );
 

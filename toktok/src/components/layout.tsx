@@ -1,8 +1,10 @@
 import * as React from "react";
 import Link from "gatsby-link";
+import NavBar from "./nav/bar.tsx";
+import NavLink from "./nav/link.tsx";
 import Helmet from "react-helmet";
 
-//import 'bootstrap';
+import "bootstrap";
 
 import "../styles/index.css";
 
@@ -11,8 +13,19 @@ const DefaultLayout: React.FC = ({ children }) => (
     <Helmet
       title="Tox - Safe as a whisper"
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" },
+        {
+          name: "description",
+          content:
+            "Whether it's corporations or governments, there's just too much digital " +
+            "spying going on today. Tox is an easy to use application that connects " +
+            "you with friends and family without anyone else listening in. While other " +
+            "big-name services require you to pay for features, Tox is totally free and " +
+            "comes without advertising &mdash; forever.",
+        },
+        {
+          name: "keywords",
+          content: "tox, security, messaging, messenger, videochat, chat",
+        },
       ]}
       link={[
         {
@@ -27,96 +40,15 @@ const DefaultLayout: React.FC = ({ children }) => (
       ]}
     />
     <header className="header header_style_01 fixed-menu">
-      <nav className="navbar header-nav navbar-expand-lg">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            <img
-              src="/images/logos/logo.svg"
-              alt="image"
-              style={{ height: "49px" }}
-            />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarApp"
-            aria-controls="navbarApp"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarApp"
-          >
-            <ul className="navbar-nav">
-              <li>
-                <Link
-                  to="/about/"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/features/"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/download/"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Download
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/pricing/"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/clients/"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Clients
-                </Link>
-              </li>
-              <li>
-                <Link to="/faqs/" className="nav-link" activeClassName="active">
-                  FAQs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact/"
-                  className="nav-link"
-                  activeClassName="active"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <NavBar>
+        <NavLink to="/download/" icon="download" title="Download" />
+        <NavLink to="/features/" icon="list-ul" title="Features" />
+        <NavLink to="/about/" icon="align-left" title="About Us" />
+        <NavLink to="/pricing/" icon="dollar" title="Pricing" />
+        <NavLink to="/clients/" icon="lock" title="Clients" />
+        <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
+        <NavLink to="/contact/" icon="envelope" title="Contact" />
+      </NavBar>
     </header>
 
     {children}
