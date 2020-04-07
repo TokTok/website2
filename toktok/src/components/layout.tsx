@@ -44,7 +44,7 @@ const DefaultLayout: React.FC = ({ children }) => (
         <NavLink to="/download/" icon="download" title="Download" />
         <NavLink to="/features/" icon="list-ul" title="Features" />
         <NavLink to="/about/" icon="align-left" title="About Us" />
-        <NavLink to="/pricing/" icon="dollar" title="Pricing" />
+        <NavLink to="/blog/" icon="rss" title="Blog" />
         <NavLink to="/clients/" icon="lock" title="Clients" />
         <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
         <NavLink to="/contact/" icon="envelope" title="Contact" />
@@ -89,11 +89,11 @@ const DefaultLayout: React.FC = ({ children }) => (
       </div>
     </footer>
 
-    <div class="copyrights">
-      <div class="container">
-        <div class="footer-distributed">
-          <div class="footer-left">
-            <p class="footer-company-name">
+    <div className="copyrights">
+      <div className="container">
+        <div className="footer-distributed">
+          <div className="footer-left">
+            <p className="footer-company-name">
               Design by: <a href="https://html.design/">html design</a>
             </p>
           </div>
