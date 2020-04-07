@@ -8,11 +8,26 @@
     "@types/react-dom": "^16.9.6",
     "bootstrap": "^4.4.1",
     "gatsby": "^2.20.12",
+    "gatsby-image": "^2.3.1",
     "gatsby-link": "^2.3.2",
+    "gatsby-plugin-feed": "^2.4.1",
+    "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sharp": "^2.5.4",
     "gatsby-plugin-typescript": "^2.3.1",
+    "gatsby-remark-copy-linked-files": "^2.2.1",
+    "gatsby-remark-images": "^3.2.2",
+    "gatsby-remark-prismjs": "^3.4.1",
+    "gatsby-remark-responsive-iframe": "^2.3.1",
+    "gatsby-remark-smartypants": "^2.2.1",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-remark": "^2.7.1",
+    "gatsby-transformer-sharp": "^2.4.4",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "prismjs": "^1.20.0",
+    "typography": "^0.16.19",
+    "typography-theme-wordpress-2016": "^0.16.19"
   },
   "keywords": [
     "gatsby, typescript"
