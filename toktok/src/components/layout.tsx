@@ -1,7 +1,5 @@
 import * as React from "react";
-import Link from "gatsby-link";
-import NavBar from "./nav/bar.tsx";
-import NavLink from "./nav/link.tsx";
+import NavLink from "./navlink.tsx";
 import Helmet from "react-helmet";
 
 import Navbar from "react-bootstrap/Navbar";
@@ -28,27 +26,34 @@ const DefaultLayout: React.FC = ({ children }) => (
 
     <header className="header header_style_01 fixed-menu">
       <div className="container">
-      <Navbar collapseOnSelect expand="lg">
-        <Navbar.Brand href="/">
-          <img
-            src="/images/logos/logo.svg"
-            alt="image"
-            style={{ height: "49px" }}
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
-          <Nav>
-            <NavLink to="/download/" icon="download" title="Download" />
-            <NavLink to="/features/" icon="list-ul" title="Features" />
-            <NavLink to="/about/" icon="align-left" title="About Us" />
-            <NavLink to="/blog/" icon="rss" title="Blog" />
-            <NavLink to="/clients/" icon="lock" title="Clients" />
-            <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
-            <NavLink to="/contact/" icon="envelope" title="Contact" />
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+        <Navbar collapseOnSelect expand="lg">
+          <Navbar.Brand href="/">
+            <img
+              src="/images/logos/logo.svg"
+              alt="image"
+              style={{ height: "49px" }}
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav">
+            <span />
+            <span />
+            <span />
+          </Navbar.Toggle>
+          <Navbar.Collapse
+            id="responsive-navbar-nav"
+            className="justify-content-end"
+          >
+            <Nav>
+              <NavLink to="/download/" icon="download" title="Download" />
+              <NavLink to="/features/" icon="list-ul" title="Features" />
+              <NavLink to="/about/" icon="align-left" title="About" />
+              <NavLink to="/blog/" icon="rss" title="Blog" />
+              <NavLink to="/clients/" icon="lock" title="Clients" />
+              <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
+              <NavLink to="/contact/" icon="envelope" title="Contact" />
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </div>
     </header>
 

@@ -1,32 +1,21 @@
 import * as React from "react";
+import Accordion from "react-bootstrap/Accordion";
+import Card from "react-bootstrap/Card";
+import SafeAnchor from "react-bootstrap/SafeAnchor";
 
-const Component: React.FC = ({ id, title, children }) => (
-  <div className="card">
-    <div className="card-header" id={id}>
+const Component = ({ id, title, children }) => (
+  <Card>
+    <Card.Header>
       <h5 className="mb-0">
-        <a
-          href=""
-          className="btn-link"
-          type="button"
-          data-toggle="collapse"
-          data-target={"#collapse-" + id}
-          aria-expanded="true"
-          aria-controls="collapseOne"
-        >
+        <Accordion.Toggle as={SafeAnchor} variant="link" eventKey={id}>
           {title}
-        </a>
+        </Accordion.Toggle>
       </h5>
-    </div>
-
-    <div
-      id={"collapse-" + id}
-      className="collapse show"
-      aria-labelledby={id}
-      data-parent="#accordionExample"
-    >
-      <div className="card-body">{children}</div>
-    </div>
-  </div>
+    </Card.Header>
+    <Accordion.Collapse eventKey={id}>
+      <Card.Body>{children}</Card.Body>
+    </Accordion.Collapse>
+  </Card>
 );
 
 export default Component;

@@ -195,7 +195,7 @@ Hero Slider - by CodyHouse.co
   top: 55%;
   bottom: auto;
   right: auto;
-  width: 60%;
+  height: 60%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
@@ -204,8 +204,9 @@ Hero Slider - by CodyHouse.co
 .cd-hero__content--img:nth-of-type(1) img {
   display: none;
   top: 83%;
+  z-index: -1;
   left: 30%;
-  width: 50%;
+  height: 30%;
 }
 
 @media only screen and (min-width: 1170px) {

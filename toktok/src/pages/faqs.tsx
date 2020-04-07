@@ -1,5 +1,7 @@
 import * as React from "react";
 import Layout from "../components/layout.tsx";
+import Accordion from "react-bootstrap/Accordion";
+import Button from "react-bootstrap/Button";
 import Card from "../components/accordion/card.tsx";
 import Link from "gatsby-link";
 
@@ -7,7 +9,7 @@ const Page = () => (
   <Layout>
     <div id="faqs" className="section lb">
       <div className="container">
-        <div class="section-title text-center">
+        <div className="section-title text-center">
           <h3>User FAQ</h3>
           <h5>
             <Link to="/technical-faq/">(go to technical FAQ)</Link>
@@ -20,9 +22,10 @@ const Page = () => (
             <a href="mailto:support@lists.tox.chat">support@lists.tox.chat</a>
           </p>
         </div>
+
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-6">
-            <div className="accordion" id="accordionExample">
+            <Accordion>
               <Card
                 id="how-tox-privacy"
                 title="How does Tox protect my privacy?"
@@ -108,8 +111,9 @@ const Page = () => (
                   .
                 </p>
               </Card>
-            </div>
+            </Accordion>
           </div>
+
           <div className="col-lg-6 col-md-6">
             <div className="faq-right">
               <img src="/uploads/about-02.png" className="img-fluid" alt="" />
