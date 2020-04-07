@@ -57,43 +57,43 @@ const Page = () => (
       </div>
     </div>
 
-    <div id="social" class="modalDialog button">
+    <div id="social" className="modalDialog button">
       <div>
-        <a href="#close" class="close-overlay"></a>
-        <a href="#close" title="Close" class="close">
-          <span class="fa fa-close">&nbsp;</span>
+        <a href="#close" className="close-overlay"></a>
+        <a href="#close" title="Close" className="close">
+          <span className="fa fa-close">&nbsp;</span>
         </a>
 
         <h2>Share the Love</h2>
 
         <p>This is where you tell your friends how awesome Tox is.</p>
         <p>(These are all manual sharing links, no creepy tracking widgets.)</p>
-        <section class="tabsection">
+        <section className="tabsection">
           <input id="tab-20" name="shareOpt" type="radio" />
-          <label for="tab-20" class="tablabel">
-            <span class="icon-dramabird"></span>
+          <label htmlFor="tab-20" className="tablabel">
+            <span className="icon-dramabird"></span>
           </label>
-          <div class="tabdiv">
+          <div className="tabdiv">
             <p>Tweet your friends:</p>
-            <p class="socialquote">
+            <p className="socialquote">
               Tired of worrying if someone's reading your conversations? Ditch
               Skype and other unsafe chat programs for #tox!{" "}
             </p>
             <a
               href="http://twitter.com/home?status=Tired%20of%20worrying%20if%20someone%27s%20reading%20your%20conversations?%20Ditch%20Skype%20and%20other%20unsafe%20chat%20programs%20for%20%23Tox!%20https://tox.chat/"
               target="_blank"
-              class="socialbutton tweet"
+              className="socialbutton tweet"
             >
-              <span class="fa fa-twitter">&nbsp;</span>Tweet
+              <span className="fa fa-twitter">&nbsp;</span>Tweet
             </a>
           </div>
           <input id="tab-30" name="shareOpt" type="radio" />
-          <label for="tab-30" class="tablabel">
-            <span class="icon-minionbook"></span>
+          <label htmlFor="tab-30" className="tablabel">
+            <span className="icon-minionbook"></span>
           </label>
-          <div class="tabdiv">
+          <div className="tabdiv">
             <p>Post on Facebook:</p>
-            <p class="socialquote">
+            <p className="socialquote">
               Whether it's corporations or governments, there's just too much
               digital spying going on today. Tox is easy-to-use software that
               connects you with friends and family without anyone else listening
@@ -103,26 +103,26 @@ const Page = () => (
             <a
               href="https://www.facebook.com/sharer/sharer.php?u=tox.chat"
               target="_blank"
-              class="socialbutton facebook"
+              className="socialbutton facebook"
             >
-              <span class="fa fa-facebook">&nbsp;&nbsp;</span>Share
+              <span className="fa fa-facebook">&nbsp;&nbsp;</span>Share
             </a>
           </div>
           <input id="tab-40" name="shareOpt" type="radio" />
-          <label for="tab-40" class="tablabel">
-            <span class="icon-diaspora"></span>
+          <label htmlFor="tab-40" className="tablabel">
+            <span className="icon-diaspora"></span>
           </label>
-          <div class="tabdiv">
+          <div className="tabdiv">
             <p>Share on Diaspora:</p>
-            <p class="socialquote">
+            <p className="socialquote">
               Join me on Tox, a distributed, encrypted, multimedia messenger!
             </p>
             <a
               href="http://sharetodiaspora.github.io/?title=Join me on Tox, a distributed, encrypted, multimedia messenger!&url=http://tox.chat"
               target="_blank"
-              class="socialbutton diaspora"
+              className="socialbutton diaspora"
             >
-              <span class="fa">d*&nbsp;</span>Post
+              <span className="fa">d*&nbsp;</span>Post
             </a>
           </div>
         </section>
