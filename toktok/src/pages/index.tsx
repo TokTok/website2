@@ -17,15 +17,15 @@ const Page = () => (
               and text messages, as safely as whispering in person.
             </p>
             <Link to="/download/" className="hvr-bounce-to-right cd-hero__btn">
-              <i className="fa fa-apple"></i>
-              Download qTox
+              <i className="fa fa-laptop"></i>
+              Download
             </Link>
             <Link
-              to="/download/"
+              to="/download/android/"
               className="hvr-bounce-to-right cd-hero__btn cd-hero__btn--secondary"
             >
               <i className="fa fa-android"></i>
-              Get the app
+              Android App
             </Link>
 
             <div className="cd-hero__content--img">
