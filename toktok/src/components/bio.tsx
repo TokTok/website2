@@ -1,59 +1,41 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Image from "gatsby-image";
 
-const Bio = () => {
+const Bio = ({ name }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
-          author {
+          authors {
             name
             summary
-          }
-          social {
-            twitter
           }
         }
       }
     }
   `);
 
-  const { author, social } = data.site.siteMetadata;
+  const { authors } = data.site.siteMetadata;
+  const author = authors.find((it) => it.name == name) || {
+    name: "Tox",
+    summary: "contributor " + name,
+  };
   return (
     <div>
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
+      <img
+        src={"https://avatars.githubusercontent.com/" + author.name}
         alt={author.name}
         style={{
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
+          width: 50,
+          borderRadius: "100%",
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        Written by{" "}
+        <a href={"https://github.com/" + author.name}>
+          <strong>{author.name}</strong>
+        </a>{" "}
+        {author.summary}
       </p>
     </div>
   );
