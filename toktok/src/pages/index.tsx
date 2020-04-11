@@ -8,9 +8,9 @@ import Features from "../components/content/features.tsx";
 const Page = () => (
   <Layout>
     <section id="home" className="cd-hero js-cd-hero">
-      <ul className="cd-hero__slider">
-        <li className="cd-hero__slide js-cd-slide">
-          <div className="cd-hero__content cd-hero__content--half-width">
+      <div className="cd-hero__slider">
+        <div className="cd-hero__slide js-cd-slide">
+          <div className="cd-hero__content cd-hero__content">
             <h2>Communicate, safe as a whisper.</h2>
             <p>
               Tox puts you in touch with friends and family, with video chats
@@ -18,7 +18,7 @@ const Page = () => (
             </p>
             <Link to="/download/" className="hvr-bounce-to-right cd-hero__btn">
               <i className="fa fa-laptop"></i>
-              Get qTox
+              Get Tox
             </Link>
             <Link
               to="/download/android/"
@@ -29,23 +29,27 @@ const Page = () => (
             </Link>
 
             <div className="cd-hero__content--img">
-              <img src="/uploads/qtox.png" className="img-fluid" alt="tech 2" />
+              <img
+                src="/uploads/qtox.png"
+                className="img-fluid"
+                alt="qTox on a Mac"
+              />
             </div>
           </div>
 
-          <div className="cd-hero__content cd-hero__content--half-width cd-hero__content--img">
+          <div className="cd-hero__content cd-hero__content cd-hero__content--img">
             <img
               src="/uploads/app_iphone_01.png"
               className="img-fluid"
-              alt="tech 1"
+              alt="Tox on a phone"
             />
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
-    <About />
     <Features />
+    <About />
   </Layout>
 );
 

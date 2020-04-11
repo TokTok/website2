@@ -1,5 +1,5 @@
 import * as React from "react";
-import Card from "../components/accordion/card.tsx";
+import Card from "../components/Accordion/Card";
 import Layout from "../components/layout/main.tsx";
 import Link from "gatsby-link";
 
@@ -7,7 +7,7 @@ const Page = () => (
   <Layout>
     <div id="faqs" className="section lb">
       <div className="container">
-        <div class="section-title text-center">
+        <div className="section-title text-center">
           <h3>Technical FAQ</h3>
           <h5>
             <Link to="/faqs/">(go to user FAQ)</Link>
@@ -15,7 +15,7 @@ const Page = () => (
         </div>
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-6">
-            <div className="accordion" id="accordionExample">
+            <div className="accordion">
               <Card
                 id="tox-central-servers"
                 title="Does Tox rely on central servers?"

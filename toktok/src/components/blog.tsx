@@ -4,8 +4,8 @@ import Layout from "../components/layout.tsx";
 
 import { rhythm, scale } from "../utils/typography";
 
-const Component = ({ location, title, children }) => {
-  return <Layout>{children}</Layout>;
-};
+const Component: React.FC = ({ location, title, children }) => (
+  <Layout>{children}</Layout>
+);
 
 export default Component;
