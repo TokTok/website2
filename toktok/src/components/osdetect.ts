@@ -74,7 +74,7 @@ const clients = [
 
       client: {
         icon: "external-link",
-        link: "https://flathub.org/apps/details/io.github.qtox.qTox",
+        link: qtoxRelease("qtox-x86_64-release.zip"),
       },
     },
   },
