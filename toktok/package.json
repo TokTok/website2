@@ -40,10 +40,7 @@
     "prettier": "^2.0.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
-    "bootstrap": "^4.4.1",
     "prismjs": "^1.20.0",
-    "typescript": "^3.8.3",
-    "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typescript": "^3.8.3"
   }
 }
