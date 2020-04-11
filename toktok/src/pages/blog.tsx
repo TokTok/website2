@@ -16,9 +16,7 @@ const BlogIndex = ({ data, location }) => {
         <div className="container">
           <div className="section-title text-center">
             <h3>Tox Blog</h3>
-            <p className="lead">
-              random musings of our developers
-            </p>
+            <p className="lead">random musings of our developers</p>
           </div>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
