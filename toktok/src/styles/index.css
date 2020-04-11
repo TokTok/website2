@@ -1093,6 +1093,46 @@ body.app_version .header_style_01.fixed-menu {
   font-size: 11px;
 }
 
+/*------------------------------------------------------------------
+    DOWNLOADS
+-------------------------------------------------------------------*/
+
+#oses .lead {
+  margin-top: -15px;
+}
+
+#oses .lead:first-of-type {
+  margin-top: 0;
+}
+
+#oses .light {
+  display: none;
+}
+
+#oses .feature:hover .light {
+   display: inline-block;
+}
+
+#oses .feature:hover .dark {
+   display: none;
+}
+
+#oses .feature img {
+   margin-top: 10px;
+}
+
+#oses .feature {
+  background: none;
+  border-radius: 20px;
+  transition: all 0.45s ease;
+  -webkit-transition: all 0.45s ease;
+  -moz-transition: all 0.45s ease;
+}
+
+#oses .feature:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .download-bg {
   background: url(../images/d-bg.jpg) no-repeat center;
   background-size: cover;
@@ -1134,6 +1174,11 @@ body.app_version .header_style_01.fixed-menu {
   margin: 0;
   line-height: 1 !important;
   font-weight: 500;
+}
+
+.customwidget h2 {
+  color: #ffffff;
+  padding: 15px 0 25px;
 }
 
 .customwidget ul {

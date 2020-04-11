@@ -43,7 +43,7 @@ class Page extends React.Component {
               <div className="col-md-6 download-image">
                 <div className="text-center image-center">
                   <img
-                    src="/images/qtox.png"
+                    src={"/images/download/" + os.name + ".png"}
                     className="img-fluid wow fadeInUp"
                     alt="Tox on your device"
                   />
@@ -78,6 +78,12 @@ class Page extends React.Component {
                 <i className="fa fa-linux"></i> Download for{" "}
                 <strong>Linux</strong>
               </a>
+            </div>
+            <div className="btn-buy">
+              <Link to="/download/other/">
+                <i className="fa fa-question"></i> Other{" "}
+                <strong>Systems</strong>
+              </Link>
             </div>
           </div>
         </div>

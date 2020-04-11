@@ -103,8 +103,7 @@ const Page = () => (
                 <p>
                   See Also:{" "}
                   <Link to="/technical-faq/#tox-tracking-dht">
-                    What is stopping people from tracking me through the public
-                    DHT (advanced)
+                    How does Tox prevent tracking? (advanced)
                   </Link>
                   .
                 </p>
