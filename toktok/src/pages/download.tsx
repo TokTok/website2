@@ -74,7 +74,7 @@ class Page extends React.Component {
               </a>
             </div>
             <div className="btn-buy">
-              <a href="https://flathub.org/apps/details/io.github.qtox.qTox">
+              <a href="https://github.com/qTox/qTox-nightly-releases/releases/download/ci-master-latest/qtox-x86_64-release.zip">
                 <i className="fa fa-linux"></i> Download for{" "}
                 <strong>Linux</strong>
               </a>
