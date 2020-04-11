@@ -1840,6 +1840,12 @@ body.app_version .dev-list .widget-title small {
   display: block;
 }
 
+@media only screen and (min-width: 768px) {
+  .navbar-collapse.collapse > .close-overlay {
+    display: none;
+  }
+}
+
 /*------------------------------------------------------------------
     BLOG
 -------------------------------------------------------------------*/
