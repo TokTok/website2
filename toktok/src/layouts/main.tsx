@@ -25,7 +25,7 @@ const Layout: React.FC = ({ children }) => (
 
     <header className="header header_style_01 fixed-menu">
       <div className="container">
-        <nav class="header-nav navbar navbar-expand-md navbar-light">
+        <nav className="header-nav navbar navbar-expand-md navbar-light">
           <Link to="/">
             <img
               src="/images/logos/logo.svg"
