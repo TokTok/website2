@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Component: React.FC = () => (
   <div id="features" className="section lb">
-    <div className="container">
+    <div className="features container">
       <div className="section-title text-center">
         <h3>Tox Features</h3>
       </div>
@@ -102,12 +102,12 @@ const Component: React.FC = () => (
           </div>
 
           <div className="col-md">
-            <h3>Free</h3>
+            <h3>Free &amp; Open Source</h3>
             <span class="icon fa fa-heart"></span>
             <p>
-              Tox is free software. That's free as in freedom, as well as in
-              price. This means Tox is yours — to use, modify, and share —
-              because Tox is developed by and for the users.
+              Tox is Free and Open Source Software (FOSS). This means Tox is
+              yours — to use, modify, and share — because Tox is developed by
+              and for the users.
             </p>
           </div>
         </div>
