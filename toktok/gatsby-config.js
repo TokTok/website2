@@ -2,13 +2,16 @@ module.exports = {
   siteMetadata: {
     title: "Tox - Safe as a whisper",
     siteUrl: "https://toktok.ltd/",
-    authors: [{
-      name: "nurupo",
-      summary: "some dude who writes blog posts.",
-    }, {
-      name: "JFreegman",
-      summary: "developer of Toxic.",
-    }],
+    authors: [
+      {
+        name: "nurupo",
+        summary: "some dude who writes blog posts.",
+      },
+      {
+        name: "JFreegman",
+        summary: "developer of Toxic.",
+      },
+    ],
     description:
       "Whether it's corporations or governments, there's just too much digital " +
       "spying going on today. Tox is an easy to use application that connects " +
@@ -55,7 +58,8 @@ module.exports = {
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-feed",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
   ],
 };
