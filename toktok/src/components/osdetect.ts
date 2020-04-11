@@ -74,7 +74,7 @@ const clients = [
 
       client: {
         icon: "external-link",
-        link: qtoxRelease("qtox-x86_64-release.zip"),
+        link: qtoxRelease("qTox-v1.16.3.x86_64.AppImage"),
       },
     },
   },
