@@ -55,6 +55,7 @@ const Layout: React.FC = ({ children }) => (
             />
             <NavLink to="/blog/" icon="rss" title="Blog" />
             <NavLink to="/faqs/" icon="info-circle" title="FAQs" />
+            <a href="#close" className="close-overlay"></a>
           </div>
         </nav>
       </div>
