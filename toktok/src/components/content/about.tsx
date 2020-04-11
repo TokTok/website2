@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Component = () => (
+const Component: React.FC = () => (
   <div id="about" className="section wb">
     <div className="container">
       <div className="row">

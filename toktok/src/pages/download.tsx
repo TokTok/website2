@@ -39,8 +39,7 @@ const Page = () => (
         </div>
         <div className="btn-buy">
           <a href="https://github.com/qTox/qTox-nightly-releases/releases/download/ci-master-latest/qTox.dmg">
-            <i className="fa fa-apple"></i> Download for{" "}
-            <strong>macOS</strong>
+            <i className="fa fa-apple"></i> Download for <strong>macOS</strong>
           </a>
         </div>
         <div className="btn-buy">

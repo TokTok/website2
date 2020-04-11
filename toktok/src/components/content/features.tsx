@@ -1,18 +1,11 @@
 import * as React from "react";
 
-const Component = () => (
+const Component: React.FC = () => (
   <div id="features" className="section lb">
     <div className="container">
       <div className="section-title text-center">
         <h3>Tox Features</h3>
-        <p className="lead">
-          Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean
-          sollicitudin, lorem quis bibendum
-          <br />
-          auctor nisi elit consequat ipsum, nec sagittis sem!
-        </p>
       </div>
-
       <div className="row">
         <div className="col-md-4">
           <div className="services-inner-box">
@@ -82,41 +75,42 @@ const Component = () => (
       </div>
     </div>
 
-    <div className="how-it-works clearfix">
-      <div className="hc colon1">
-        <h2>1</h2>
-        <h3>Go App Store</h3>
-        <p>
-          Lorem Ipsum dolroin gravida nibh vel velit aliquet. Aenean
-          sollicitudin, lorem quis bibendum..
-        </p>
+    <div className="why-tox-special clearfix">
+      <div className="title text-center">
+        <h2>What makes Tox different?</h2>
       </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md">
+            <h3>Encrypted</h3>
+            <span class="icon fa fa-shield"></span>
+            <p>
+              Everything you do with Tox is encrypted using open-source
+              libraries. The only people who can see your conversations are the
+              people you're talking with.
+            </p>
+          </div>
 
-      <div className="hc colon2">
-        <h2>2</h2>
-        <h3>Create an Account</h3>
-        <p>
-          Lorem Ipsum dolroin gravida nibh vel velit aliquet. Aenean
-          sollicitudin, lorem quis bibendum..
-        </p>
-      </div>
+          <div className="col-md">
+            <h3>Distributed</h3>
+            <img src="/images/distributed.svg" alt="Distributed" />
+            <p>
+              Tox has no central servers that can be raided, shut down, or
+              forced to turn over data — the network is made up of its users.
+              Say goodbye to server outages!
+            </p>
+          </div>
 
-      <div className="hc colon3">
-        <h2>3</h2>
-        <h3>Download the App</h3>
-        <p>
-          Lorem Ipsum dolroin gravida nibh vel velit aliquet. Aenean
-          sollicitudin, lorem quis bibendum..
-        </p>
-      </div>
-
-      <div className="hc colon4">
-        <h2>4</h2>
-        <h3>Enjoy &amp; Rate us!</h3>
-        <p>
-          Lorem Ipsum dolroin gravida nibh vel velit aliquet. Aenean
-          sollicitudin, lorem quis bibendum..
-        </p>
+          <div className="col-md">
+            <h3>Free</h3>
+            <span class="icon fa fa-heart"></span>
+            <p>
+              Tox is free software. That's free as in freedom, as well as in
+              price. This means Tox is yours — to use, modify, and share —
+              because Tox is developed by and for the users.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

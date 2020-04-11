@@ -1,8 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout/main.tsx";
-import Accordion from "react-bootstrap/Accordion";
-import Button from "react-bootstrap/Button";
-import Card from "../components/accordion/card.tsx";
+import Card from "../components/Accordion/Card";
 import Link from "gatsby-link";
 
 const Page = () => (
@@ -25,7 +23,7 @@ const Page = () => (
 
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-6">
-            <Accordion>
+            <div className="accordion">
               <Card
                 id="how-tox-privacy"
                 title="How does Tox protect my privacy?"
@@ -111,7 +109,7 @@ const Page = () => (
                   .
                 </p>
               </Card>
-            </Accordion>
+            </div>
           </div>
 
           <div className="col-lg-6 col-md-6">

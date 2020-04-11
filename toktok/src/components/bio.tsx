@@ -1,7 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-const Bio = ({ name }) => {
+const Bio: React.FC = ({ name }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {

@@ -36,77 +36,6 @@ Hero Slider - by CodyHouse.co
   }
 }
 
-.cd-header__nav {
-  /* mobile first - navigation hidden by default, triggered by tap/click on navigation icon */
-  float: right;
-  margin-right: 5%;
-  width: 44px;
-  height: 100%;
-  /*background: url("assets/cd-icon-menu.svg") no-repeat center center;*/
-}
-
-.cd-header__nav ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-
-.cd-header__nav ul.cd-is-visible {
-  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(50px);
-  -ms-transform: translateY(50px);
-  transform: translateY(50px);
-}
-
-.cd-header__nav a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 5%;
-  background: #21272c;
-  border-top: 1px solid #333c44;
-  color: #ffffff;
-}
-
-@media only screen and (min-width: 768px) {
-  .cd-header__nav {
-    /* reset navigation values */
-    width: auto;
-    height: auto;
-    background: none;
-  }
-  .cd-header__nav ul {
-    position: static;
-    width: auto;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    line-height: 70px;
-  }
-  .cd-header__nav ul.cd-is-visible {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  .cd-header__nav li {
-    display: inline-block;
-    margin-left: 1em;
-  }
-  .cd-header__nav a {
-    display: inline-block;
-    height: auto;
-    line-height: normal;
-    background: transparent;
-    padding: 0.6em 1em;
-    border-top: none;
-  }
-}
-
 /* Slider */
 .cd-hero {
   position: relative;
@@ -150,15 +79,11 @@ Hero Slider - by CodyHouse.co
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.cd-hero__slide:first-of-type {
   background-color: #e65100;
   background-image: url(../../uploads/front.jpg);
 }
 
-.cd-hero__content.cd-hero__content--full-width,
-.cd-hero__content.cd-hero__content--half-width {
+.cd-hero__content.cd-hero__content {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -215,35 +140,6 @@ Hero Slider - by CodyHouse.co
   }
 }
 
-.cd-hero__content.cd-hero__content--bg-video {
-  /* hide video on mobile device */
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.cd-hero__content--bg-video video {
-  /* you won't see this element in the html, but it will be injected using javascript */
-  display: block;
-  min-height: 100%;
-  min-width: 100%;
-  max-width: none;
-  height: auto;
-  width: auto;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .cd-hero__content h2,
 .cd-hero__content p {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -294,21 +190,21 @@ Hero Slider - by CodyHouse.co
   background-color: #161a1e;
 }
 
+.cd-hero__content.cd-hero__content {
+  padding-top: 120px;
+}
+
 @media only screen and (min-width: 768px) {
-  .cd-hero__content.cd-hero__content--full-width,
-  .cd-hero__content.cd-hero__content--half-width {
+  .cd-hero__content.cd-hero__content {
     padding-top: 150px;
   }
-  .cd-hero__content.cd-hero__content--bg-video {
-    display: block;
-  }
-  .cd-hero__content.cd-hero__content--half-width {
+  .cd-hero__content.cd-hero__content {
     width: 50%;
   }
-  .cd-hero__content.cd-hero__content--half-width:first-of-type {
+  .cd-hero__content.cd-hero__content:first-of-type {
     left: 5%;
   }
-  .cd-hero__content.cd-hero__content--half-width:nth-of-type(2) {
+  .cd-hero__content.cd-hero__content:nth-of-type(2) {
     right: 5%;
     left: auto;
   }
@@ -329,8 +225,7 @@ Hero Slider - by CodyHouse.co
 }
 
 @media only screen and (min-width: 1170px) {
-  .cd-hero__content.cd-hero__content--full-width,
-  .cd-hero__content.cd-hero__content--half-width {
+  .cd-hero__content.cd-hero__content {
     padding-top: 220px;
   }
   .cd-hero__content h2,
