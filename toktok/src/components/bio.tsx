@@ -15,8 +15,16 @@ const Bio: React.FC = ({ name }) => {
     }
   `);
 
+  if (name) {
+    name = name.toLowerCase();
+  } else {
+    name = "from the distant past";
+  }
+
   const { authors } = data.site.siteMetadata;
-  const author = authors.find((it) => it.name == name) || {
+  const author = authors.find(
+    (it) => it.name.toLowerCase() === name
+  ) || {
     name: "Tox",
     summary: "contributor " + name,
   };
@@ -34,8 +42,8 @@ const Bio: React.FC = ({ name }) => {
         Written by{" "}
         <a href={"https://github.com/" + author.name}>
           <strong>{author.name}</strong>
-        </a>{" "}
-        {author.summary}
+        </a>
+        , {author.summary}
       </p>
     </div>
   );

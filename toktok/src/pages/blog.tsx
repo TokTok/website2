@@ -12,14 +12,12 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout>
       <SEO title="All posts" />
-      <div id="pricing" className="section wb">
+      <div id="blog" className="section wb">
         <div className="container">
           <div className="section-title text-center">
-            <h3>Happy Clients</h3>
+            <h3>Tox Blog</h3>
             <p className="lead">
-              We thanks for all our awesome testimonials! There are hundreds of
-              our happy customers! <br />
-              Let's see what others say about Appfast website template!
+              random musings of our developers
             </p>
           </div>
           {posts.map(({ node }) => {

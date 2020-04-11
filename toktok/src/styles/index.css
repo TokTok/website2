@@ -1504,47 +1504,47 @@ select.mobile-device {
   margin-left: 20px;
 }
 
-footer {
+#footer {
    height: 100%;
   background: #414141;
   color: #dcdcdc;
 }
 
-footer a {
+#footer a {
   color: #f5ad1a;
 }
 
-footer a:hover {
+#footer a:hover {
   color: #ffc44c;
 }
 
-footer .cc {
+#footer .cc {
   text-align: right;
   font-size: 15px;
   max-width: 350px;
   margin-bottom: 13px;
 }
 
-footer .cc img {
+#footer .cc img {
   margin-top: 30px;
   margin-bottom: 5px;
 }
 
-footer .ext-med {
+#footer .ext-med {
   margin-top: 60px;
 }
 
-footer .icon {
+#footer .icon {
   font-size: 30px;
   margin-right: 15px;
 }
 
 @media screen and (max-width: 576px) {
-  footer .cc {
+  #footer .cc {
     width: 88px;
   }
 
-  footer .cc p {
+  #footer .cc p {
     display: none;
   }
 }
@@ -1779,4 +1779,20 @@ body.app_version .dev-list .widget-title small {
 
 .navbar-collapse.collapse:target {
   display: block;
+}
+
+/*------------------------------------------------------------------
+    BLOG
+-------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  #blog-post article section {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+#blog-post article section li {
+  list-style-type: circle;
+  margin-left: 20px;
 }
