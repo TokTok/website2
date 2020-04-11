@@ -16,18 +16,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <div id="pricing" className="section wb">
+      <div id="blog-post" className="section wb">
         <div className="container">
-          <div className="section-title text-center">
-            <h3>Happy Clients</h3>
-            <p className="lead">
-              We thanks for all our awesome testimonials! There are hundreds of
-              our happy customers! <br />
-              Let's see what others say about Appfast website template!
-            </p>
-          </div>
           <article>
-            <header>
+            <header className="section-title text-center">
               <h1>{post.frontmatter.title}</h1>
               <p>{post.frontmatter.date}</p>
             </header>

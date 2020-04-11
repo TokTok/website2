@@ -5,6 +5,9 @@ module.exports = {
     authors: [{
       name: "nurupo",
       summary: "some dude who writes blog posts.",
+    }, {
+      name: "JFreegman",
+      summary: "developer of Toxic.",
     }],
     description:
       "Whether it's corporations or governments, there's just too much digital " +

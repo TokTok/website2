@@ -61,7 +61,7 @@ const DefaultLayout: React.FC = ({ children }) => (
 
     {children}
 
-    <footer>
+    <footer id="footer">
       <div className="container">
         <div className="row">
           <div className="ext-med col">
@@ -116,7 +116,7 @@ const DefaultLayout: React.FC = ({ children }) => (
             <br />
             <p>
               This page was generated from{" "}
-              <a href="https://github.com/Tox/tox.chat/tree/master/themes/website/templates/index.html">
+              <a href="https://github.com/TokTok/website">
                 a file hosted in public GitHub repository
               </a>{" "}
               — issue tickets and pull requests are very welcome!
