@@ -95,7 +95,7 @@ const Component: React.FC = () => (
             <h3>Distributed</h3>
             <img src="/images/distributed.svg" alt="Distributed" />
             <p>
-              Tox has no central servers that can be raided, shut down, or
+              Tox has no central servers that can be overloaded, shut down, or
               forced to turn over data — the network is made up of its users.
               Say goodbye to server outages!
             </p>

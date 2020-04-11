@@ -14,6 +14,7 @@
     "gatsby-plugin-feed": "^2.4.1",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.5.4",
     "gatsby-plugin-typescript": "^2.3.1",
     "gatsby-remark-copy-linked-files": "^2.2.1",
@@ -37,6 +38,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "bootstrap": "^4.4.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.3.13",
     "prettier": "^2.0.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",

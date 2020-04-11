@@ -4,7 +4,7 @@ import Link from "gatsby-link";
 import NavLink from "../components/Nav/Link";
 import Helmet from "react-helmet";
 
-import "../styles/index.css";
+import "../styles/index.scss";
 
 const Layout: React.FC = ({ children }) => (
   <div>
