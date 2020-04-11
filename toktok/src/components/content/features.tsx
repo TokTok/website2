@@ -67,8 +67,8 @@ const Component: React.FC = () => (
             </div>
             <h2>Groups</h2>
             <p>
-              Chat, call, and share video and files with the whole gang in Tox's
-              group chats.
+              Chat, call, and share files with the whole gang in Tox's group
+              chats.
             </p>
           </div>
         </div>
