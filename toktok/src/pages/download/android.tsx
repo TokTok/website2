@@ -10,9 +10,7 @@ const Page = () => (
             <div className="customwidget text-left">
               <h1>Thanks for downloading!</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id
-                felis rhoncus, ultrices dolor quis, faucibus velit. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus.
+                Once aTox is on the play store, we'll link to that instead.
               </p>
             </div>
           </div>
