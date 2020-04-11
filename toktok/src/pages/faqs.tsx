@@ -114,7 +114,7 @@ const Page = () => (
 
           <div className="col-lg-6 col-md-6">
             <div className="faq-right">
-              <img src="/uploads/about-02.png" className="img-fluid" alt="" />
+              <img src="/images/about-02.png" className="img-fluid" alt="" />
             </div>
           </div>
         </div>

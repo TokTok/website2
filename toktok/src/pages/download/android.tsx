@@ -17,7 +17,7 @@ const Page = () => (
           <div className="col-md-6 iphones">
             <div className="text-center image-center">
               <img
-                src="/uploads/iphones.png"
+                src="/images/iphones.png"
                 alt=""
                 className="img-fluid wow fadeInUp"
               />

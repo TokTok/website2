@@ -30,7 +30,7 @@ const Page = () => (
 
             <div className="cd-hero__content--img">
               <img
-                src="/uploads/qtox.png"
+                src="/images/qtox.png"
                 className="img-fluid"
                 alt="qTox on a Mac"
               />
@@ -39,7 +39,7 @@ const Page = () => (
 
           <div className="cd-hero__content cd-hero__content cd-hero__content--img">
             <img
-              src="/uploads/app_iphone_01.png"
+              src="/images/app_iphone_01.png"
               className="img-fluid"
               alt="Tox on a phone"
             />
