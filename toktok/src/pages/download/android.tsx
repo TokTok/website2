@@ -14,10 +14,10 @@ const Page = () => (
               </p>
             </div>
           </div>
-          <div className="col-md-6 iphones">
+          <div className="col-md-6">
             <div className="text-center image-center">
               <img
-                src="/images/iphones.png"
+                src="/images/download/Android.png"
                 alt=""
                 className="img-fluid wow fadeInUp"
               />
