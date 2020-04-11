@@ -9,9 +9,7 @@ const Page = () => (
           <div className="col-md-6 col-sm-12">
             <div className="customwidget text-left">
               <h1>Thanks for downloading!</h1>
-              <p>
-                Once aTox is on the play store, we'll link to that instead.
-              </p>
+              <p>Once aTox is on the play store, we'll link to that instead.</p>
             </div>
           </div>
           <div className="col-md-6">

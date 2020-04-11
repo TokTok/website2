@@ -128,9 +128,12 @@ export function detectOS() {
     return defaultClient;
   }
 
-  const client = clients.find((client) =>
-    client.userAgents.find(ua => window.navigator.userAgent.indexOf(ua) != -1)
-  ) || defaultClient;
+  const client =
+    clients.find((client) =>
+      client.userAgents.find(
+        (ua) => window.navigator.userAgent.indexOf(ua) != -1
+      )
+    ) || defaultClient;
   if (64 in client.result) {
     if (arch === 64) {
       return client.result[64];
