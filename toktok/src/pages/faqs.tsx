@@ -1,5 +1,5 @@
 import * as React from "react";
-import Layout from "../components/layout/main.tsx";
+import Layout from "../layouts/main.tsx";
 import Card from "../components/Accordion/Card";
 import Link from "gatsby-link";
 

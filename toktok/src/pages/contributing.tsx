@@ -1,20 +1,12 @@
 import * as React from "react";
-import Layout from "../components/layout/main.tsx";
+import Layout from "../layouts/main.tsx";
 
 const Page = () => (
   <Layout>
     <div id="contact" className="section lb">
       <div className="container">
         <div className="section-title text-center">
-          <h3>Get in Touch</h3>
-          <div
-            className="info-box"
-            data-toggle="tooltip"
-            data-placement="bottom"
-            title="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-          >
-            <i className="fa fa-question-circle" aria-hidden="true"></i>
-          </div>
+          <h3>Contributing to Tox</h3>
         </div>
 
         <div className="row">

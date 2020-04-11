@@ -1,11 +1,12 @@
-import * as React from "react";
+import React from "react";
+import PropTypes from 'prop-types';
 import Link from "gatsby-link";
-import NavLink from "../Nav/Link";
+import NavLink from "../components/Nav/Link";
 import Helmet from "react-helmet";
 
-import "../../styles/index.css";
+import "../styles/index.css";
 
-const DefaultLayout: React.FC = ({ children }) => (
+const Layout: React.FC = ({ children }) => (
   <div>
     <Helmet
       title="Tox - Safe as a whisper"
@@ -128,4 +129,4 @@ const DefaultLayout: React.FC = ({ children }) => (
   </div>
 );
 
-export default DefaultLayout;
+export default Layout;
