@@ -40,11 +40,11 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.section a {
+.section p a {
   color: #4f4fcf;
 }
 
-.section a:hover {
+.section p a:hover {
   color: #0056b3;
 }
 
@@ -467,7 +467,7 @@ body.app_version .header_style_01.fixed-menu {
 -------------------------------------------------------------------*/
 
 .top-banner {
-  background: url(../uploads/bg-img.jpg) bottom center no-repeat #e65100;
+  background: url(../images/bg-img.jpg) bottom center no-repeat #e65100;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1094,7 +1094,7 @@ body.app_version .header_style_01.fixed-menu {
 }
 
 .download-bg {
-  background: url(../uploads/d-bg.jpg) no-repeat center;
+  background: url(../images/d-bg.jpg) no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -1109,8 +1109,18 @@ body.app_version .header_style_01.fixed-menu {
   position: absolute;
 }
 
-.download-bg a {
+.download-bg p a {
   color: #ffff00;
+}
+
+.download-image {
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .download-image {
+    padding-top: 0;
+  }
 }
 
 /*------------------------------------------------------------------

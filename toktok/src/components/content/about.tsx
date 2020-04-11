@@ -14,7 +14,7 @@ const Component: React.FC = () => (
       <div className="row align-items-center">
         <div className="col-lg-7 col-md-6">
           <div className="about-left">
-            <img src="/uploads/about-01.png" className="img-fluid" alt="" />
+            <img src="/images/about-01.png" className="img-fluid" alt="" />
           </div>
         </div>
         <div className="col-lg-5 col-md-6">
@@ -60,7 +60,7 @@ const Component: React.FC = () => (
         </div>
         <div className="col-lg-7 col-md-6">
           <div className="about-left">
-            <img src="/uploads/about-02.png" className="img-fluid" alt="" />
+            <img src="/images/about-02.png" className="img-fluid" alt="" />
           </div>
         </div>
       </div>
