@@ -1,6 +1,26 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
+function getAuthor(authors, name) {
+  if (name) {
+    name = name.toLowerCase();
+  } else {
+    name = "from the distant past.";
+  }
+
+  const author = authors.find((it) => it.name.toLowerCase() === name);
+  if (!author) {
+    return {
+      name: "Tox",
+      summary: " contributor " + name,
+    };
+  }
+  return {
+    name: author.name,
+    summary: ", " + author.summary,
+  };
+}
+
 const Bio: React.FC = ({ name }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -15,19 +35,7 @@ const Bio: React.FC = ({ name }) => {
     }
   `);
 
-  if (name) {
-    name = name.toLowerCase();
-  } else {
-    name = "from the distant past";
-  }
-
-  const { authors } = data.site.siteMetadata;
-  const author = authors.find(
-    (it) => it.name.toLowerCase() === name
-  ) || {
-    name: "Tox",
-    summary: "contributor " + name,
-  };
+  const author = getAuthor(data.site.siteMetadata.authors, name);
   return (
     <div>
       <img
@@ -43,7 +51,7 @@ const Bio: React.FC = ({ name }) => {
         <a href={"https://github.com/" + author.name}>
           <strong>{author.name}</strong>
         </a>
-        , {author.summary}
+        {author.summary}
       </p>
     </div>
   );
