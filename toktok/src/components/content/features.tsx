@@ -55,7 +55,7 @@ const Component: React.FC = () => (
             </div>
             <h2>File sharing</h2>
             <p>
-              Trade files, send photos and videos, with no artificial limits or
+              Share files, send photos and videos, with no artificial limits or
               caps.
             </p>
           </div>
