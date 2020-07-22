@@ -89,6 +89,7 @@ yourself to this page.
 *   [Python](https://github.com/TokTok/py-toxcore-c)
 *   [Racket](https://github.com/lehitoskin/libtoxcore-racket)
 *   [Ruby](https://github.com/toxon/tox.rb)
+*   [Rust](https://github.com/tox-rs/tox)
 *   [Rust](https://github.com/tox-rs/rstox) rstox
 *   [Vala](https://github.com/naxuroqa/vala-toxcore-c)
 
