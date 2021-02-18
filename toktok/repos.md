@@ -22,18 +22,3 @@ status and test coverage of all projects can be viewed on this page.
   {% include repository.html name=repo_name %}
   {% endfor %}
 </table>
-
-# c-toxcore Jenkins builds
-
-<table>
-  <tr>
-    <th>Target</th>
-    <th>Build Status</th>
-  </tr>
-  {% comment %}
-  The capture line is here because of a bug in Jekyll or something. :(
-  {% endcomment %}
-  {% for target in site.data.jenkins %}
-  {% include jenkins.html name=target.name %}
-  {% endfor %}
-</table>
